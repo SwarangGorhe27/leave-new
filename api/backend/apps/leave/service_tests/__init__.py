@@ -1,0 +1,1 @@
+"""Leave service tests package."""

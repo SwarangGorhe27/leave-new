@@ -1,0 +1,1460 @@
+{
+  "schema": "acme",
+  "rows_per_table_target": 3,
+  "tables_total": 303,
+  "tables_processed": 303,
+  "errors_count": 249,
+  "errors": [
+    {
+      "table": "approval_workflow_config",
+      "error": "duplicate key value violates unique constraint \"approval_workflow_config_module_workflow_name_f41cdb33_uniq\"\nDETAIL:  Key (module, workflow_name)=(approval_workflow_config_module_1, Acme Approval Workflow Config 1) already exists.\n"
+    },
+    {
+      "table": "att_shift_type_lookup",
+      "error": "duplicate key value violates unique constraint \"att_shift_type_lookup_code_key\"\nDETAIL:  Key (code)=(ATT_-1000) already exists.\n"
+    },
+    {
+      "table": "auth_group",
+      "error": "duplicate key value violates unique constraint \"auth_group_name_key\"\nDETAIL:  Key (name)=(Acme Auth Group 1) already exists.\n"
+    },
+    {
+      "table": "django_content_type",
+      "error": "duplicate key value violates unique constraint \"django_content_type_app_label_model_76bd3d3b_uniq\"\nDETAIL:  Key (app_label, model)=(django_content_type_app_label_1, django_content_type_model_1) already exists.\n"
+    },
+    {
+      "table": "django_session",
+      "error": "duplicate key value violates unique constraint \"django_session_pkey\"\nDETAIL:  Key (session_key)=(django_session_session_key_1) already exists.\n"
+    },
+    {
+      "table": "feature_flag_master",
+      "error": "duplicate key value violates unique constraint \"feature_flag_master_flag_key_key\"\nDETAIL:  Key (flag_key)=(feature_flag_master_flag_key_1) already exists.\n"
+    },
+    {
+      "table": "leave_notification_template",
+      "error": "duplicate key value violates unique constraint \"leave_notification_templ_event_trigger_module_cha_a80d7e04_uniq\"\nDETAIL:  Key (event_trigger, module, channel, language)=(leave_notification_template_event_trigger_1, leave_notification_template_module_1, leave_notification_t, leave_noti) already exists.\n"
+    },
+    {
+      "table": "mst_account_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_account_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_appraisal_cycle",
+      "error": "duplicate key value violates unique constraint \"mst_appraisal_cycle_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_approval_action",
+      "error": "duplicate key value violates unique constraint \"mst_approval_action_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_asset_category",
+      "error": "duplicate key value violates unique constraint \"mst_asset_category_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_asset_condition",
+      "error": "duplicate key value violates unique constraint \"mst_asset_condition_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_asset_type",
+      "error": "duplicate key value violates unique constraint \"mst_asset_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_attendance_status",
+      "error": "duplicate key value violates unique constraint \"mst_attendance_status_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_audit_event_type",
+      "error": "duplicate key value violates unique constraint \"mst_audit_event_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_bank",
+      "error": "duplicate key value violates unique constraint \"uq_mst_bank_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_bank_status",
+      "error": "duplicate key value violates unique constraint \"uq_mst_bank_status_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_batch",
+      "error": "new row for relation \"mst_batch\" violates check constraint \"chk_mst_batch_start_year\"\nDETAIL:  Failing row contains (4, MST_-1000, mst_batch_label_1, 1, t, 2026-06-02 12:29:39.258526+00, 2026-06-02 12:29:39.258526+00, 2026-06-02 12:29:39.258526+00, {\"index\": 1, \"table\": \"mst_batch\", \"seeded\": true}, 1, mst_batch_created_by_system_1, mst_batch_updated_by_system_1, mst_batch_created_source_1, mst_batch_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_batch\", \"seeded\": true}).\n"
+    },
+    {
+      "table": "mst_blood_group",
+      "error": "duplicate key value violates unique constraint \"uq_mst_blood_group_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_cab",
+      "error": "duplicate key value violates unique constraint \"uq_mst_cab_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_candidate_source",
+      "error": "duplicate key value violates unique constraint \"mst_candidate_source_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_caste",
+      "error": "duplicate key value violates unique constraint \"uq_mst_caste_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_caste_category",
+      "error": "duplicate key value violates unique constraint \"uq_mst_caste_category_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_certification_body",
+      "error": "duplicate key value violates unique constraint \"mst_certification_body_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_communication_channel",
+      "error": "duplicate key value violates unique constraint \"uq_mst_comm_channel_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_communication_task",
+      "error": "duplicate key value violates unique constraint \"uq_mst_comm_task_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_company",
+      "error": "duplicate key value violates unique constraint \"mst_company_pan_key\"\nDETAIL:  Key (pan)=(mst_compan) already exists.\n"
+    },
+    {
+      "table": "mst_contract_status",
+      "error": "duplicate key value violates unique constraint \"mst_contract_status_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_country",
+      "error": "duplicate key value violates unique constraint \"uq_mst_country_code\"\nDETAIL:  Key (code)=(MS) already exists.\n"
+    },
+    {
+      "table": "mst_course",
+      "error": "duplicate key value violates unique constraint \"mst_course_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_cover_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_cover_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_document_side",
+      "error": "duplicate key value violates unique constraint \"uq_mst_document_side_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_document_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_document_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_education_level",
+      "error": "duplicate key value violates unique constraint \"uq_mst_education_level_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_education_status",
+      "error": "duplicate key value violates unique constraint \"uq_mst_education_status_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_employee_category",
+      "error": "duplicate key value violates unique constraint \"uq_mst_employee_category_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_employee_status",
+      "error": "duplicate key value violates unique constraint \"uq_mst_employee_status_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_employee_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_employee_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_escalation_type",
+      "error": "duplicate key value violates unique constraint \"mst_escalation_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_esi_scheme",
+      "error": "duplicate key value violates unique constraint \"mst_esi_scheme_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_exception_type",
+      "error": "duplicate key value violates unique constraint \"mst_exception_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_extension",
+      "error": "duplicate key value violates unique constraint \"uq_mst_extension_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_gender",
+      "error": "duplicate key value violates unique constraint \"uq_mst_gender_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_goal_category",
+      "error": "duplicate key value violates unique constraint \"mst_goal_category_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_holiday_type",
+      "error": "duplicate key value violates unique constraint \"mst_holiday_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_import_type",
+      "error": "duplicate key value violates unique constraint \"mst_import_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_insurance_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_insurance_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_interview_round",
+      "error": "duplicate key value violates unique constraint \"mst_interview_round_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_job_function",
+      "error": "duplicate key value violates unique constraint \"mst_job_function_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_job_level",
+      "error": "duplicate key value violates unique constraint \"mst_job_level_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_labour_register_type",
+      "error": "duplicate key value violates unique constraint \"mst_labour_register_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_language",
+      "error": "duplicate key value violates unique constraint \"uq_mst_language_iso639\"\nDETAIL:  Key (iso_639_2_code)=(MST) already exists.\n"
+    },
+    {
+      "table": "mst_language_proficiency",
+      "error": "duplicate key value violates unique constraint \"uq_mst_lang_proficiency_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_letter_approval_type",
+      "error": "duplicate key value violates unique constraint \"mst_letter_approval_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_location_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_location_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_marital_status",
+      "error": "duplicate key value violates unique constraint \"uq_mst_marital_status_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_mother_tongue",
+      "error": "duplicate key value violates unique constraint \"uq_mst_mother_tongue_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_nationality",
+      "error": "duplicate key value violates unique constraint \"uq_mst_nationality_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_nominee_purpose",
+      "error": "duplicate key value violates unique constraint \"uq_mst_nominee_purpose_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_notification_channel",
+      "error": "duplicate key value violates unique constraint \"mst_notification_channel_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_notification_template",
+      "error": "duplicate key value violates unique constraint \"mst_notification_template_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_occupation",
+      "error": "duplicate key value violates unique constraint \"uq_mst_occupation_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_offer_status",
+      "error": "duplicate key value violates unique constraint \"mst_offer_status_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_passing_year",
+      "error": "duplicate key value violates unique constraint \"mst_passing_year_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_passport_category",
+      "error": "duplicate key value violates unique constraint \"uq_mst_passport_category_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_passport_status",
+      "error": "duplicate key value violates unique constraint \"uq_mst_passport_status_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_pay_component",
+      "error": "duplicate key value violates unique constraint \"mst_pay_component_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_payment_type",
+      "error": "duplicate key value violates unique constraint \"mst_payment_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_payroll_group",
+      "error": "duplicate key value violates unique constraint \"uq_mst_payroll_group_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_payroll_mode",
+      "error": "duplicate key value violates unique constraint \"uq_mst_payroll_mode_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_payroll_status",
+      "error": "duplicate key value violates unique constraint \"uq_mst_payroll_status_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_permission",
+      "error": "duplicate key value violates unique constraint \"mst_permission_permission_code_key\"\nDETAIL:  Key (permission_code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_pf_scheme",
+      "error": "duplicate key value violates unique constraint \"mst_pf_scheme_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_policy_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_policy_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_position_change_reason",
+      "error": "duplicate key value violates unique constraint \"mst_position_change_reason_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_premium_frequency",
+      "error": "duplicate key value violates unique constraint \"uq_mst_premium_frequency_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_profession",
+      "error": "duplicate key value violates unique constraint \"uq_mst_profession_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_proficiency_level",
+      "error": "duplicate key value violates unique constraint \"uq_mst_proficiency_level_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_reason",
+      "error": "duplicate key value violates unique constraint \"mst_reason_module_code_2f1b0f29_uniq\"\nDETAIL:  Key (module, code)=(mst_reason_module_1, MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_relation",
+      "error": "duplicate key value violates unique constraint \"uq_mst_relation_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_relevant_experience_range",
+      "error": "duplicate key value violates unique constraint \"mst_relevant_experience_range_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_religion",
+      "error": "duplicate key value violates unique constraint \"uq_mst_religion_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_residential_status",
+      "error": "duplicate key value violates unique constraint \"mst_residential_status_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_salary_structure",
+      "error": "duplicate key value violates unique constraint \"mst_salary_structure_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_salutation",
+      "error": "duplicate key value violates unique constraint \"uq_mst_salutation_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_separation_mode",
+      "error": "duplicate key value violates unique constraint \"mst_separation_mode_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_shift_type",
+      "error": "duplicate key value violates unique constraint \"mst_shift_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_source_of_hire",
+      "error": "duplicate key value violates unique constraint \"uq_mst_source_of_hire_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_source_of_hire_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_soh_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_specialization",
+      "error": "duplicate key value violates unique constraint \"uq_mst_specialization_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_statutory_component",
+      "error": "duplicate key value violates unique constraint \"mst_statutory_component_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_study_mode",
+      "error": "duplicate key value violates unique constraint \"uq_mst_study_mode_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_system_role",
+      "error": "duplicate key value violates unique constraint \"uq_mst_system_role_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_tax_regime",
+      "error": "duplicate key value violates unique constraint \"mst_tax_regime_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_tds_section",
+      "error": "duplicate key value violates unique constraint \"mst_tds_section_section_code_key\"\nDETAIL:  Key (section_code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_training_category",
+      "error": "duplicate key value violates unique constraint \"mst_training_category_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_training_mode",
+      "error": "duplicate key value violates unique constraint \"mst_training_mode_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_transport_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_transport_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_university",
+      "error": "duplicate key value violates unique constraint \"uq_mst_university_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_verification_status",
+      "error": "duplicate key value violates unique constraint \"mst_verification_status_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_visa_status",
+      "error": "duplicate key value violates unique constraint \"uq_mst_visa_status_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_visa_type",
+      "error": "duplicate key value violates unique constraint \"uq_mst_visa_type_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_work_experience_range",
+      "error": "new row for relation \"mst_work_experience_range\" violates check constraint \"chk_work_exp_range_max_gt_min\"\nDETAIL:  Failing row contains (8, MST_-1000, mst_work_experience_range_label_1, 1, 1, t, 2026-06-02 12:29:44.697825+00, 2026-06-02 12:29:44.697825+00, 2026-06-02 12:29:44.697825+00, {\"index\": 1, \"table\": \"mst_work_experience_range\", \"seeded\": tru..., 1, mst_work_experience_range_created_by_system_1, mst_work_experience_range_updated_by_system_1, mst_work_experience_range_created_source_1, mst_work_experience_range_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_work_experience_range\", \"seeded\": tru...).\n"
+    },
+    {
+      "table": "mst_workflow_type",
+      "error": "duplicate key value violates unique constraint \"mst_workflow_type_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "sec_menu_item",
+      "error": "duplicate key value violates unique constraint \"sec_menu_item_code_key\"\nDETAIL:  Key (code)=(SEC_-1000) already exists.\n"
+    },
+    {
+      "table": "users",
+      "error": "duplicate key value violates unique constraint \"users_email_key\"\nDETAIL:  Key (email)=(employee1.users@acme.com) already exists.\n"
+    },
+    {
+      "table": "auth_permission",
+      "error": "null value in column \"content_type_id\" of relation \"auth_permission\" violates not-null constraint\nDETAIL:  Failing row contains (1247, Acme Auth Permission 1, null, AUTH-1000).\n"
+    },
+    {
+      "table": "sec_ip_whitelist",
+      "error": "null value in column \"company_id\" of relation \"sec_ip_whitelist\" violates not-null constraint\nDETAIL:  Failing row contains (266949b2-fb5e-4e7f-bba3-c07c40e54a3b, 2026-06-02 12:29:45.093667+00, 2026-06-02 12:29:45.093667+00, 2026-06-02 12:29:45.093667+00, t, sec_ip_whitelist_ip_cidr_1, Auto-seeded record 1 for sec_ip_whitelist, f3ffe9f1-2d48-40c8-b25e-1eaa6488969e, null).\n"
+    },
+    {
+      "table": "att_unmapped_punch_log",
+      "error": "duplicate key value violates unique constraint \"uq_att_unmapped_punch_log_essl_dedup\"\nDETAIL:  Key (essl_log_id, essl_source_table)=(1, att_unmapped_punch_log_essl_source_table_1) already exists.\n"
+    },
+    {
+      "table": "mst_grade",
+      "error": "null value in column \"company_id\" of relation \"mst_grade\" violates not-null constraint\nDETAIL:  Failing row contains (2ccad368-aeb1-4c92-8a77-ea9862104c1a, MST_-1, mst_grade_label_1, 1, mst_grade_seniority_level_1, t, 2026-06-02 12:29:45.215259+00, 2026-06-02 12:29:45.215259+00, 2026-06-02 12:29:45.215259+00, {\"index\": 1, \"table\": \"mst_grade\", \"seeded\": true}, 1, mst_grade_created_by_system_1, mst_grade_updated_by_system_1, mst_grade_created_source_1, mst_grade_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_grade\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "mst_department",
+      "error": "null value in column \"company_id\" of relation \"mst_department\" violates not-null constraint\nDETAIL:  Failing row contains (46802a1e-6140-46b8-b967-4a500d49010f, MST_-1000, Acme Mst Department 1, t, 2026-06-02 12:29:45.291224+00, 2026-06-02 12:29:45.291224+00, 2026-06-02 12:29:45.291224+00, {\"index\": 1, \"table\": \"mst_department\", \"seeded\": true}, 1, mst_department_created_by_system_1, mst_department_updated_by_system_1, mst_department_created_source_1, mst_department_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_department\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "mst_board",
+      "error": "duplicate key value violates unique constraint \"mst_board_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_insurance_company",
+      "error": "duplicate key value violates unique constraint \"mst_insurance_company_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_state",
+      "error": "null value in column \"country_id\" of relation \"mst_state\" violates not-null constraint\nDETAIL:  Failing row contains (12, MST_-1, mst_state_label_1, t, 2026-06-02 12:29:45.485979+00, 2026-06-02 12:29:45.485979+00, 2026-06-02 12:29:45.485979+00, {\"index\": 1, \"table\": \"mst_state\", \"seeded\": true}, 1, mst_state_created_by_system_1, mst_state_updated_by_system_1, mst_state_created_source_1, mst_state_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_state\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "mst_education_specialization",
+      "error": "duplicate key value violates unique constraint \"mst_education_specialization_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "mst_qualification",
+      "error": "duplicate key value violates unique constraint \"mst_qualification_code_key\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "employee_segments",
+      "error": "null value in column \"company_id\" of relation \"employee_segments\" violates not-null constraint\nDETAIL:  Failing row contains (af23ede0-79a0-4c6f-9384-fcde209ecb29, employee_segments_title_1, EMPL-1000, employee_segments_so, {\"index\": 1, \"table\": \"employee_segments\", \"seeded\": true}, 1, f52af27f-7098-455c-807e-b521eeaed0cc, da50129b-afd5-4a0f-900c-c9809438479a, t, 2026-06-02 12:29:45.688665+00, 2026-06-02 12:29:45.688665+00, 2026-06-02 12:29:45.688665+00, {\"index\": 1, \"table\": \"employee_segments\", \"seeded\": true}, 1, employee_segments_created_by_system_1, employee_segments_updated_by_system_1, employee_segments_created_source_1, employee_segments_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_segments\", \"seeded\": true}, null, 0a65557f-6229-4485-9d81-e6636ac11ec7).\n"
+    },
+    {
+      "table": "employee_code_sequences",
+      "error": "null value in column \"company_id\" of relation \"employee_code_sequences\" violates not-null constraint\nDETAIL:  Failing row contains (bc001304-4655-4984-80a7-19ff8ef31e1d, employee_code_sequen, employee_code_sequences_suffix_format_1, e, 1, 1, employee_c, 2026-05-03, t, 2026-06-02 12:29:45.719413+00, 2026-06-02 12:29:45.719413+00, 2026-06-02 12:29:45.719413+00, {\"index\": 1, \"table\": \"employee_code_sequences\", \"seeded\": true}, 1, employee_code_sequences_created_by_system_1, employee_code_sequences_updated_by_system_1, employee_code_sequences_created_source_1, employee_code_sequences_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_code_sequences\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "holiday_branch_map",
+      "error": "duplicate key value violates unique constraint \"holiday_branch_map_holiday_id_branch_id_697b6697_uniq\"\nDETAIL:  Key (holiday_id, branch_id)=(3dfc5a17-93dc-456b-aaad-b3f377b94b37, f3ffe9f1-2d48-40c8-b25e-1eaa6488969e) already exists.\n"
+    },
+    {
+      "table": "company_policy_form_documents",
+      "error": "null value in column \"company_id\" of relation \"company_policy_form_documents\" violates not-null constraint\nDETAIL:  Failing row contains (19a1d6c0-a184-45de-88d0-5bf74d40b2e6, company_policy_form_, company_policy_form_documents_, Acme Company Policy Form Documents 1, Auto-seeded record 1 for company_policy_form_documents, company_policy_form_documents_file_url_1, Acme Company Policy Form Documents 1, 1, company_policy_form_documents_mime_type_1, company_policy_form_, t, t, {\"index\": 1, \"table\": \"company_policy_form_documents\", \"seeded\":..., 3166a77b-6927-4d9a-b529-205eb21dcfac, 2bc78d7b-ca32-4850-b232-f3a96c1c4ddf, t, 2026-06-02 12:29:45.830257+00, 2026-06-02 12:29:45.830257+00, 2026-06-02 12:29:45.830257+00, {\"index\": 1, \"table\": \"company_policy_form_documents\", \"seeded\":..., 1, company_policy_form_documents_created_by_system_1, company_policy_form_documents_updated_by_system_1, company_policy_form_documents_created_source_1, company_policy_form_documents_updated_source_1, {}, {\"index\": 1, \"table\": \"company_policy_form_documents\", \"seeded\":..., null, ef13d85c-8d44-4d89-92d2-6c64552dbb10, 333a81d1-4519-4793-bdab-d1d7a77a7424).\n"
+    },
+    {
+      "table": "sec_data_scope_rule",
+      "error": "null value in column \"role_id\" of relation \"sec_data_scope_rule\" violates not-null constraint\nDETAIL:  Failing row contains (8b834754-010d-4d35-8aae-31a98121039d, sec_data_scope_rule_module_1, sec_data_scope_rule_, {}, null).\n"
+    },
+    {
+      "table": "sec_column_restriction",
+      "error": "null value in column \"role_id\" of relation \"sec_column_restriction\" violates not-null constraint\nDETAIL:  Failing row contains (9c71a929-8f1e-401c-9401-4073d9a6fab9, Acme Sec Column Restriction 1, Acme Sec Column Restriction 1, sec_column_restricti, null).\n"
+    },
+    {
+      "table": "mst_institution",
+      "error": "duplicate key value violates unique constraint \"uq_mst_institution_code\"\nDETAIL:  Key (code)=(MST_-1000) already exists.\n"
+    },
+    {
+      "table": "sec_role_menu_permission",
+      "error": "null value in column \"menu_item_id\" of relation \"sec_role_menu_permission\" violates not-null constraint\nDETAIL:  Failing row contains (07e48266-5a5d-44fd-ba6d-70e535b42365, t, t, t, t, t, null, null).\n"
+    },
+    {
+      "table": "sec_role_permission_group",
+      "error": "null value in column \"role_id\" of relation \"sec_role_permission_group\" violates not-null constraint\nDETAIL:  Failing row contains (f6eab951-fb5d-44ce-816a-97979c3a80a4, 9cfed722-bdc5-4bee-9868-7205733d8375, null).\n"
+    },
+    {
+      "table": "sec_group_permission",
+      "error": "null value in column \"permission_id\" of relation \"sec_group_permission\" violates not-null constraint\nDETAIL:  Failing row contains (e7690c57-f9cf-4094-be61-01a54fc630e7, null, 9cfed722-bdc5-4bee-9868-7205733d8375).\n"
+    },
+    {
+      "table": "django_admin_log",
+      "error": "null value in column \"user_id\" of relation \"django_admin_log\" violates not-null constraint\nDETAIL:  Failing row contains (6, 2026-06-02 12:29:46.141482+00, django_admin_log_object_id_1, django_admin_log_object_repr_1, 1, django_admin_log_change_message_1, null, null).\n"
+    },
+    {
+      "table": "users_groups",
+      "error": "null value in column \"user_id\" of relation \"users_groups\" violates not-null constraint\nDETAIL:  Failing row contains (7, null, null).\n"
+    },
+    {
+      "table": "employees",
+      "error": "null value in column \"company_id\" of relation \"employees\" violates not-null constraint\nDETAIL:  Failing row contains (baa663a1-1170-40e4-8fb2-f9e7d91fc730, EMPL-1000, EMPL-1, employees_salutation_1, Acme Employees 1, Acme Employees 1, Acme Employees 1, Acme Employees 1, 2026-05-03, 2026-05-03, 2026-05-03, employees_status_1, t, EMPL-1, employees_profile_picture_url_1, employees_signature_url_1, employees_biography_1, {}, t, employees_data_classification_, 1, t, 2026-06-02 12:29:46.477009+00, 2026-06-02 12:29:46.477009+00, 2026-06-02 12:29:46.477009+00, {\"index\": 1, \"table\": \"employees\", \"seeded\": true}, 1, employees_created_by_system_1, employees_updated_by_system_1, employees_created_source_1, employees_updated_source_1, {}, {\"index\": 1, \"table\": \"employees\", \"seeded\": true}, null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "auth_group_permissions",
+      "error": "null value in column \"group_id\" of relation \"auth_group_permissions\" violates not-null constraint\nDETAIL:  Failing row contains (5, null, null).\n"
+    },
+    {
+      "table": "users_user_permissions",
+      "error": "null value in column \"user_id\" of relation \"users_user_permissions\" violates not-null constraint\nDETAIL:  Failing row contains (5, null, null).\n"
+    },
+    {
+      "table": "guardian_userobjectpermission",
+      "error": "null value in column \"content_type_id\" of relation \"guardian_userobjectpermission\" violates not-null constraint\nDETAIL:  Failing row contains (4, guardian_userobjectpermission_object_pk_1, null, null, null).\n"
+    },
+    {
+      "table": "guardian_groupobjectpermission",
+      "error": "null value in column \"content_type_id\" of relation \"guardian_groupobjectpermission\" violates not-null constraint\nDETAIL:  Failing row contains (4, guardian_groupobjectpermission_object_pk_1, null, null, null).\n"
+    },
+    {
+      "table": "mst_designation",
+      "error": "null value in column \"company_id\" of relation \"mst_designation\" violates not-null constraint\nDETAIL:  Failing row contains (ac5164a2-eb07-4d3f-a8e0-71d610f6a2c8, MST_-1, mst_designation_title_1, t, 2026-06-02 12:29:46.857814+00, 2026-06-02 12:29:46.857814+00, 2026-06-02 12:29:46.857814+00, {\"index\": 1, \"table\": \"mst_designation\", \"seeded\": true}, 1, mst_designation_created_by_system_1, mst_designation_updated_by_system_1, mst_designation_created_source_1, mst_designation_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_designation\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "mst_department_division",
+      "error": "null value in column \"department_id\" of relation \"mst_department_division\" violates not-null constraint\nDETAIL:  Failing row contains (4, MST_-1, mst_department_division_label_1, t, 2026-06-02 12:29:46.913609+00, 2026-06-02 12:29:46.913609+00, 2026-06-02 12:29:46.913609+00, {\"index\": 1, \"table\": \"mst_department_division\", \"seeded\": true}, 1, mst_department_division_created_by_system_1, mst_department_division_updated_by_system_1, mst_department_division_created_source_1, mst_department_division_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_department_division\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "mst_team",
+      "error": "null value in column \"company_id\" of relation \"mst_team\" violates not-null constraint\nDETAIL:  Failing row contains (5ad3f7f8-e720-4571-8376-df637fe4c0cf, MST_-1, Acme Mst Team 1, t, 2026-06-02 12:29:46.961932+00, 2026-06-02 12:29:46.961932+00, 2026-06-02 12:29:46.961932+00, {\"index\": 1, \"table\": \"mst_team\", \"seeded\": true}, 1, mst_team_created_by_system_1, mst_team_updated_by_system_1, mst_team_created_source_1, mst_team_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_team\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "mst_city",
+      "error": "null value in column \"state_id\" of relation \"mst_city\" violates not-null constraint\nDETAIL:  Failing row contains (9, MST_-1, mst_city_label_1, MST_-1, t, 2026-06-02 12:29:47.052163+00, 2026-06-02 12:29:47.052163+00, 2026-06-02 12:29:47.052163+00, {\"index\": 1, \"table\": \"mst_city\", \"seeded\": true}, 1, mst_city_created_by_system_1, mst_city_updated_by_system_1, mst_city_created_source_1, mst_city_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_city\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "employee_segment_members",
+      "error": "null value in column \"employee_id\" of relation \"employee_segment_members\" violates not-null constraint\nDETAIL:  Failing row contains (0c9d5293-2e7d-4112-85fc-5c1c9d2f787a, t, 2026-06-02 12:29:47.180947+00, 2026-06-02 12:29:47.180947+00, 2026-06-02 12:29:47.180947+00, {\"index\": 1, \"table\": \"employee_segment_members\", \"seeded\": true..., 1, employee_segment_members_created_by_system_1, employee_segment_members_updated_by_system_1, employee_segment_members_created_source_1, employee_segment_members_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_segment_members\", \"seeded\": true..., null, null).\n"
+    },
+    {
+      "table": "employee_property_damages",
+      "error": "null value in column \"employee_id\" of relation \"employee_property_damages\" violates not-null constraint\nDETAIL:  Failing row contains (9c9d5fe5-a11b-4fbd-a3c8-0ad9c4b21edd, 2026-05-03, Acme Employee Property Damages 1, Auto-seeded record 1 for employee_property_damages, 10.11, 1, 2026-05-03, 2026-05-03, Auto-seeded record 1 for employee_property_damages, cd0ccf06-1d5f-4a8f-b2c5-bc70c24a8c4d, 903baba6-1a07-4442-a45c-a30f7b658e05, t, 2026-06-02 12:29:47.206976+00, 2026-06-02 12:29:47.206976+00, 2026-06-02 12:29:47.206976+00, {\"index\": 1, \"table\": \"employee_property_damages\", \"seeded\": tru..., 1, employee_property_damages_created_by_system_1, employee_property_damages_updated_by_system_1, employee_property_damages_created_source_1, employee_property_damages_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_property_damages\", \"seeded\": tru..., null).\n"
+    },
+    {
+      "table": "employee_change_requests",
+      "error": "null value in column \"employee_id\" of relation \"employee_change_requests\" violates not-null constraint\nDETAIL:  Failing row contains (7ae0dd28-97d8-4d85-aad6-56981eced119, employee_change_requests_modul, employee_change_requ, employee_change_requ, {\"index\": 1, \"table\": \"employee_change_requests\", \"seeded\": true..., {\"index\": 1, \"table\": \"employee_change_requests\", \"seeded\": true..., 3734c7b6-f09e-435e-8f58-8b488368bf09, Auto-seeded record 1 for employee_change_requests, Auto-seeded record 1 for employee_change_requests, 2026-06-02 12:29:47.237223+00, t, 2026-06-02 12:29:47.237223+00, 2026-06-02 12:29:47.237223+00, 2026-06-02 12:29:47.237223+00, {\"index\": 1, \"table\": \"employee_change_requests\", \"seeded\": true..., 1, employee_change_requests_created_by_system_1, employee_change_requests_updated_by_system_1, employee_change_requests_created_source_1, employee_change_requests_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_change_requests\", \"seeded\": true..., null, null, null).\n"
+    },
+    {
+      "table": "employee_social_profiles",
+      "error": "null value in column \"employee_id\" of relation \"employee_social_profiles\" violates not-null constraint\nDETAIL:  Failing row contains (ef95dc6e-043d-47a1-a567-32379b3afa73, employee_social_profiles_linkedin_url_1, employee_social_profiles_github_url_1, employee_social_profiles_stackoverflow_url_1, employee_social_profiles_portfolio_url_1, employee_social_profiles_personal_website_1, employee_social_profiles_twitter_url_1, employee_social_profiles_facebook_url_1, employee_social_profiles_instagram_url_1, t, 2026-06-02 12:29:47.275223+00, 2026-06-02 12:29:47.275223+00, 2026-06-02 12:29:47.275223+00, {\"index\": 1, \"table\": \"employee_social_profiles\", \"seeded\": true..., 1, employee_social_profiles_created_by_system_1, employee_social_profiles_updated_by_system_1, employee_social_profiles_created_source_1, employee_social_profiles_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_social_profiles\", \"seeded\": true..., null).\n"
+    },
+    {
+      "table": "att_roster_lock_state",
+      "error": "null value in column \"company_id\" of relation \"att_roster_lock_state\" violates not-null constraint\nDETAIL:  Failing row contains (6e61ae37-3ccd-47b1-af87-0a96b2211ef5, 2026-06-02 12:29:47.316451+00, 2026-06-02 12:29:47.316451+00, 2026-06-02 12:29:47.316451+00, {\"index\": 1, \"table\": \"att_roster_lock_state\", \"seeded\": true}, 1, 1, {\"index\": 1, \"table\": \"att_roster_lock_state\", \"seeded\": true}, att_roster_lock_stat, t, 2026-06-02 12:29:47.317457+00, att_roster_lock_state_lock_reason_1, 2026-06-02 12:29:47.317457+00, att_roster_lock_state_unlock_reason_1, null, null, null, null, null).\n"
+    },
+    {
+      "table": "weekly_off_shuffle_requests",
+      "error": "null value in column \"employee_id\" of relation \"weekly_off_shuffle_requests\" violates not-null constraint\nDETAIL:  Failing row contains (dfa96aa0-2ea4-45d1-baa8-6caae479d0e9, 2026-05-03, 2026-05-03, 2026-05-03, weekly_off_shuffle_requests_reason_1, weekly_off_shuffle_requests_impact_on_shift_1, weekly_off_shuffle_r, 2026-06-02 12:29:47.356473+00, 2026-06-02 12:29:47.356473+00, 2026-06-02 12:29:47.356473+00, 2026-06-02 12:29:47.356473+00, 37dad287-d862-48e2-91e5-87225f54b227, 0b40305d-3b4d-424a-b5b9-7a3accf82ea4, {\"index\": 1, \"table\": \"weekly_off_shuffle_requests\", \"seeded\": t..., {}, 1, null, null).\n"
+    },
+    {
+      "table": "emp_shift_roster_publish_log",
+      "error": "null value in column \"company_id\" of relation \"emp_shift_roster_publish_log\" violates not-null constraint\nDETAIL:  Failing row contains (d3e0772a-6902-496b-b5a0-1da587c29371, 2026-06-02 12:29:47.396473+00, 2026-06-02 12:29:47.396473+00, 2026-06-02 12:29:47.396473+00, {\"index\": 1, \"table\": \"emp_shift_roster_publish_log\", \"seeded\": ..., 1, 1, emp_shift_roster_pub, 1, 1, {\"index\": 1, \"table\": \"emp_shift_roster_publish_log\", \"seeded\": ..., t, 2026-06-02 12:29:47.396473+00, 2026-06-02 12:29:47.396473+00, emp_shift_roster_publish_log_note_1, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_language_proficiencies",
+      "error": "null value in column \"employee_id\" of relation \"employee_language_proficiencies\" violates not-null constraint\nDETAIL:  Failing row contains (a39e3287-86da-49fd-984b-a998d349084f, t, t, 2026-06-02 12:29:47.445963+00, 2026-06-02 12:29:47.445963+00, 2026-06-02 12:29:47.445963+00, {\"index\": 1, \"table\": \"employee_language_proficiencies\", \"seeded..., 1, employee_language_proficiencies_created_by_system_, employee_language_proficiencies_updated_by_system_, employee_language_proficiencies_created_source_1, employee_language_proficiencies_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_language_proficiencies\", \"seeded..., null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_personal_details",
+      "error": "null value in column \"employee_id\" of relation \"employee_personal_details\" violates not-null constraint\nDETAIL:  Failing row contains (025e8637-391a-41d3-8f74-a884dd4aa385, 2026-05-03, Acme Employee Personal Details 1, employee_personal_details_place_of_birth_1, employee_personal_details_resi, Acme Employee Personal Details 1, Acme Employee Personal Details 1, employee_personal_details_native_place_1, employee_personal_details_diet, employee_personal_details_hous, t, employee_personal_details_disability_details_1, 10.1, 10.1, employee_personal_details_identification_mark_1, employee_personal_details_pre_existing_diseases_1, t, t, t, employee_personal_details_hobby_1, 1, 1, employee_personal_details_data, 1, t, t, 2026-06-02 12:29:47.529643+00, 2026-06-02 12:29:47.529643+00, 2026-06-02 12:29:47.529643+00, {\"index\": 1, \"table\": \"employee_personal_details\", \"seeded\": tru..., 1, employee_personal_details_created_by_system_1, employee_personal_details_updated_by_system_1, employee_personal_details_created_source_1, employee_personal_details_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_personal_details\", \"seeded\": tru..., null, null, null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_bank_accounts",
+      "error": "null value in column \"account_type_id\" of relation \"employee_bank_accounts\" violates not-null constraint\nDETAIL:  Failing row contains (8da3b101-60f8-4364-a1bd-4cbb0202437e, employee_bank_accounts_account, EMPL-1, EMPL-1, Acme Employee Bank Accounts 1, 100 Innovation Park, Pune, Maharashtra, Acme Employee Bank Accounts 1, t, t, t, 2026-06-02 12:29:47.586045+00, 3b9a132c-a869-48a9-8fb0-c4c0caf220de, t, employee_bank_accounts_data_cl, 1, t, 2026-06-02 12:29:47.586045+00, 2026-06-02 12:29:47.586045+00, 2026-06-02 12:29:47.586045+00, {\"index\": 1, \"table\": \"employee_bank_accounts\", \"seeded\": true}, 1, employee_bank_accounts_created_by_system_1, employee_bank_accounts_updated_by_system_1, employee_bank_accounts_created_source_1, employee_bank_accounts_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_bank_accounts\", \"seeded\": true}, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_statutory_ids",
+      "error": "null value in column \"employee_id\" of relation \"employee_statutory_ids\" violates not-null constraint\nDETAIL:  Failing row contains (97799f76-52a4-4dae-abe2-1f6718f528f4, employee_s, t, 2026-06-02 12:29:47.644108+00, employee_sta, t, employee_sta, t, employee_statutory_ids_pf_, employee_statutory_ids_pf_type_1, 10.11, 10.11, 10.11, 2026-05-03, 2026-05-03, employee_statutory_i, t, t, employee_statutor, employee_statutory_ids_esic_type_1, 10.11, 10.11, 2026-05-03, employee_statutory_ids_esic_dispensary_1, employee_statutory_i, employee_statutory_ids_pt_enro, t, employee_statutory_ids_lwf_enr, t, employee_sta, t, employee_statutory_i, 2026-05-03, 2026-05-03, employee_statutory_ids_passport_place_of_issue_1, employee_statutory_ids_passport_category_1, employee_statutory_ids_visa_number_1, employee_statutory_ids_visa_type_1, India, employee_statutory_ids_visa_sponsor_1, employee_statutory_ids_visa_status_1, 2026-05-03, 2026-05-03, t, 2026-06-02 12:29:47.644108+00, 2026-06-02 12:29:47.644108+00, 2026-06-02 12:29:47.644108+00, {\"index\": 1, \"table\": \"employee_statutory_ids\", \"seeded\": true}, 1, employee_statutory_ids_created_by_system_1, employee_statutory_ids_updated_by_system_1, employee_statutory_ids_created_source_1, employee_statutory_ids_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_statutory_ids\", \"seeded\": true}, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_passport_visa",
+      "error": "null value in column \"employee_id\" of relation \"employee_passport_visa\" violates not-null constraint\nDETAIL:  Failing row contains (e0c48299-4414-4158-8234-ef1d5f1b2fd5, employee_passport_visa_passpor, Acme Employee Passport Visa 1, 2026-05-03, 2026-05-03, employee_passport_visa_issue_place_1, t, employee_passport_visa_passport_front_url_1, employee_passport_visa_passport_back_url_1, employee_passport_visa_document_url_1, t, employee_passport_visa_visa_number_1, 2026-05-03, 2026-05-03, employee_passport_visa_visa_sponsor_1, employee_passport_visa_visa_document_url_1, employee_passport_visa_visa_copy_url_1, t, employee_passport_visa_data_cl, 1, t, 2026-06-02 12:29:47.687718+00, 2026-06-02 12:29:47.687718+00, 2026-06-02 12:29:47.687718+00, {\"index\": 1, \"table\": \"employee_passport_visa\", \"seeded\": true}, 1, employee_passport_visa_created_by_system_1, employee_passport_visa_updated_by_system_1, employee_passport_visa_created_source_1, employee_passport_visa_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_passport_visa\", \"seeded\": true}, null, null, null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_documents",
+      "error": "null value in column \"document_type_id\" of relation \"employee_documents\" violates not-null constraint\nDETAIL:  Failing row contains (5f365e88-db45-4b01-bb38-18c2874e12b6, employee_documents_document_number_1, Acme Employee Documents 1, 2026-05-03, 2026-05-03, employee_documents_issuing_authority_1, employee_documents_file_url_1, Acme Employee Documents 1, 1, employee_documents_mime_type_1, employee_documents_v, 2026-05-03, Auto-seeded record 1 for employee_documents, t, t, employee_documents_data_classi, 1, t, 2026-06-02 12:29:47.731946+00, 2026-06-02 12:29:47.731946+00, 2026-06-02 12:29:47.731946+00, {\"index\": 1, \"table\": \"employee_documents\", \"seeded\": true}, 1, employee_documents_created_by_system_1, employee_documents_updated_by_system_1, employee_documents_created_source_1, employee_documents_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_documents\", \"seeded\": true}, null, null, null, null, null).\n"
+    },
+    {
+      "table": "mst_attendance_cycle",
+      "error": "null value in column \"company_id\" of relation \"mst_attendance_cycle\" violates not-null constraint\nDETAIL:  Failing row contains (46c4bb1b-810d-4e91-ac5c-59da5b7f6c3a, 2026-06-02 12:29:47.772457+00, 2026-06-02 12:29:47.772457+00, 2026-06-02 12:29:47.772457+00, t, {\"index\": 1, \"table\": \"mst_attendance_cycle\", \"seeded\": true}, Acme Mst Attendance Cycle 1, 1, t, null, null, null).\n"
+    },
+    {
+      "table": "leave_balance_ledger",
+      "error": "null value in column \"employee_id\" of relation \"leave_balance_ledger\" violates not-null constraint\nDETAIL:  Failing row contains (dc4fc019-067a-4e56-8a64-f381fd50e95a, 1, leave_balance_ledger_transacti, 10.11, 10.11, 10.11, leave_balance_ledger_reference_type_1, 81f7564e-a040-49d1-8529-8952f1b2fb14, 1, Auto-seeded record 1 for leave_balance_ledger, 2026-06-02 12:29:47.821471+00, 2026-06-02 12:29:47.821471+00, null, null, db1231d7-1219-40a3-b2f8-7f84377d2e7d).\n"
+    },
+    {
+      "table": "mst_employee_leave_policies",
+      "error": "null value in column \"employee_id\" of relation \"mst_employee_leave_policies\" violates not-null constraint\nDETAIL:  Failing row contains (b30644c6-4468-4acc-9aea-60ca3dda8cf7, 2026-05-03, 2026-05-03, 2026-06-02 12:29:47.869552+00, 2026-06-02 12:29:47.869552+00, 2026-06-02 12:29:47.869552+00, 205c3503-5b18-402e-8f47-551346da2dc2, bddb7b33-9d07-4c0e-814a-63a4b41617d9, {\"index\": 1, \"table\": \"mst_employee_leave_policies\", \"seeded\": t..., {}, 1, null, 7c629ba3-db9a-45f1-91d6-58f89857e582).\n"
+    },
+    {
+      "table": "leave_delegations",
+      "error": "null value in column \"delegate_id\" of relation \"leave_delegations\" violates not-null constraint\nDETAIL:  Failing row contains (1e83c296-522f-49cf-8267-116879268c65, 2026-05-03, 2026-05-03, leave_delegations_scope_1, t, 2026-06-02 12:29:47.915639+00, 2026-06-02 12:29:47.915639+00, 2026-06-02 12:29:47.915639+00, 108e0941-1110-463c-970c-cef05ec18523, 8ebf239e-8563-472c-ad6e-73be983c3bf9, {\"index\": 1, \"table\": \"leave_delegations\", \"seeded\": true}, {}, 1, null, null).\n"
+    },
+    {
+      "table": "ntf_attendance_notification",
+      "error": "null value in column \"company_id\" of relation \"ntf_attendance_notification\" violates not-null constraint\nDETAIL:  Failing row contains (32987029-e488-49d7-a976-79c50a47da3e, t, ntf_attendance_notification_no, ntf_attendance_notification_reference_table_1, 99cd2358-af45-4ab0-8e87-ba31df8cf6cb, ntf_attendance_notification_message_1, t, 2026-06-02 12:29:47.944354+00, 2026-06-02 12:29:47.944354+00, 2026-06-02 12:29:47.944354+00, null, null, null).\n"
+    },
+    {
+      "table": "employee_verification_tokens",
+      "error": "null value in column \"employee_id\" of relation \"employee_verification_tokens\" violates not-null constraint\nDETAIL:  Failing row contains (b4433c33-e1cc-49cb-ba97-e4c40c566808, employee_verification_tokens_token_hash_1, employee_verification_tokens_t, 2026-06-02 12:29:47.993609+00, 2026-06-02 12:29:47.993609+00, t, null, null, 2026-06-02 12:29:47.993609+00, 2026-06-02 12:29:47.993609+00, t, 2026-06-02 12:29:47.99461+00, 2026-06-02 12:29:47.99461+00, {\"index\": 1, \"table\": \"employee_verification_tokens\", \"seeded\": ..., 1, employee_verification_tokens_created_by_system_1, employee_verification_tokens_updated_by_system_1, employee_verification_tokens_created_source_1, employee_verification_tokens_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_verification_tokens\", \"seeded\": ..., null).\n"
+    },
+    {
+      "table": "employee_lifecycle",
+      "error": "null value in column \"employee_id\" of relation \"employee_lifecycle\" violates not-null constraint\nDETAIL:  Failing row contains (f714eca3-95fa-4e8f-814a-3ca4c847fcf2, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-05-03, 2026-06-02 12:29:48.056094+00, 2026-06-02 12:29:48.056094+00, 2026-06-02 12:29:48.056094+00, {\"index\": 1, \"table\": \"employee_lifecycle\", \"seeded\": true}, 1, employee_lifecycle_created_by_system_1, employee_lifecycle_updated_by_system_1, employee_lifecycle_created_source_1, employee_lifecycle_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_lifecycle\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "comp_off_requests",
+      "error": "null value in column \"employee_id\" of relation \"comp_off_requests\" violates not-null constraint\nDETAIL:  Failing row contains (9d56d228-f2eb-4816-b4b8-2af45feec0e9, 2026-05-03, comp_off_requests_co, comp_off_requests_ea, comp_off_requests_reason_1, comp_off_requests_proof_url_1, 10.11, 2026-05-03, comp_off_requests_st, 10.11, t, 2026-06-02 12:29:48.093901+00, comp_off_requests_idempotency_key_1, 2026-06-02 12:29:48.093901+00, 2026-06-02 12:29:48.093901+00, 2026-06-02 12:29:48.093901+00, 607c5570-6cb9-4481-b07f-9d68f52fe9da, 11d62e0d-d016-4ef0-9cba-606814f7888d, {\"index\": 1, \"table\": \"comp_off_requests\", \"seeded\": true}, {}, 1, null, null).\n"
+    },
+    {
+      "table": "employee_auth",
+      "error": "null value in column \"employee_id\" of relation \"employee_auth\" violates not-null constraint\nDETAIL:  Failing row contains (ee9d8938-8173-448c-b81e-4bf257a8ff99, employee_auth_password_hash_1, employee_auth_password_salt_1, 2026-06-02 12:29:48.146439+00, 2026-06-02 12:29:48.146439+00, t, t, employee_auth_mfa_ty, employee_auth_mfa_secret_1, 1, 1, t, 2026-06-02 12:29:48.146439+00, employee_auth_locked_reason_1, 2026-06-02 12:29:48.146439+00, 2026-06-02 12:29:48.146439+00, null, employee_auth_session_token_hash_1, t, 2026-06-02 12:29:48.146439+00, 2026-06-02 12:29:48.146439+00, 2026-06-02 12:29:48.146439+00, {\"index\": 1, \"table\": \"employee_auth\", \"seeded\": true}, 1, employee_auth_created_by_system_1, employee_auth_updated_by_system_1, employee_auth_created_source_1, employee_auth_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_auth\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "employee_medical_emergency",
+      "error": "null value in column \"employee_id\" of relation \"employee_medical_emergency\" violates not-null constraint\nDETAIL:  Failing row contains (397cac28-9de4-4c59-89fb-6dee9615243e, Acme Employee Medical Emergency 1, employee_medical_eme, employee_medical_emergency_emergency_contact_relationship_1, employee_medical_eme, employee1.employee_medical_emergency@acme.com, 100 Innovation Park, Pune, Maharashtra, employee_medical_emergency_pre_existing_diseases_1, employee_medical_emergency_ongoing_medications_1, employee_medical_emergency_allergies_1, t, employee_medical_emergency_surgery_details_1, t, employee_medical_emergency_disability_details_1, 10.11, Acme Employee Medical Emergency 1, employee_medical_eme, employee_medical_emergency_medical_document_url_1, t, employee_medical_emergency_dat, 1, t, 2026-06-02 12:29:48.208918+00, 2026-06-02 12:29:48.208918+00, 2026-06-02 12:29:48.208918+00, {\"index\": 1, \"table\": \"employee_medical_emergency\", \"seeded\": tr..., 1, employee_medical_emergency_created_by_system_1, employee_medical_emergency_updated_by_system_1, employee_medical_emergency_created_source_1, employee_medical_emergency_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_medical_emergency\", \"seeded\": tr..., null, null).\n"
+    },
+    {
+      "table": "out_duty_requests",
+      "error": "null value in column \"employee_id\" of relation \"out_duty_requests\" violates not-null constraint\nDETAIL:  Failing row contains (8eda4ef1-ce0b-4742-bbf2-fcec2471f325, 2026-05-03, 2026-05-03, 2026-05-03, out_duty_requests_from_location_1, out_duty_requests_to_location_1, out_duty_requests_reason_1, out_duty_requests_ma, out_duty_requests_travel_mode_, 10.11, 10.11, t, 10.11, t, ad21fa8b-c681-4787-b575-f0fe4ca6e54a, out_duty_requests_st, 2026-06-02 12:29:48.266868+00, out_duty_requests_idempotency_key_1, 2026-06-02 12:29:48.266868+00, 2026-06-02 12:29:48.266868+00, 2026-06-02 12:29:48.266868+00, d019f84d-ffe7-41de-be51-6c8ad521b66e, 82c0f372-6537-400d-ab83-47e59cca57d3, {\"index\": 1, \"table\": \"out_duty_requests\", \"seeded\": true}, {}, 1, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_communication_preferences",
+      "error": "null value in column \"channel_id\" of relation \"employee_communication_preferences\" violates not-null constraint\nDETAIL:  Failing row contains (e9373c41-1c39-4d0b-ae73-2a5a15b49750, EMPL-1000, t, t, 2026-06-02 12:29:48.306869+00, 2026-06-02 12:29:48.306869+00, 2026-06-02 12:29:48.306869+00, {\"index\": 1, \"table\": \"employee_communication_preferences\", \"see..., 1, employee_communication_preferences_created_by_syst, employee_communication_preferences_updated_by_syst, employee_communication_preferences_created_source_, employee_communication_preferences_updated_source_, {}, {\"index\": 1, \"table\": \"employee_communication_preferences\", \"see..., null, null).\n"
+    },
+    {
+      "table": "employee_reporting_relationships",
+      "error": "null value in column \"company_id\" of relation \"employee_reporting_relationships\" violates not-null constraint\nDETAIL:  Failing row contains (9ce911e8-82b0-4226-9e4c-319ef856cf45, employee_reporting_relationshi, 2026-05-03, 2026-05-03, t, 2026-06-02 12:29:48.3393+00, 2026-06-02 12:29:48.3393+00, 2026-06-02 12:29:48.3393+00, {\"index\": 1, \"table\": \"employee_reporting_relationships\", \"seede..., 1, employee_reporting_relationships_created_by_system, employee_reporting_relationships_updated_by_system, employee_reporting_relationships_created_source_1, employee_reporting_relationships_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_reporting_relationships\", \"seede..., null, null, null, null).\n"
+    },
+    {
+      "table": "employee_role_assignments",
+      "error": "null value in column \"employee_id\" of relation \"employee_role_assignments\" violates not-null constraint\nDETAIL:  Failing row contains (2026-06-02 12:29:48.370811+00, 2026-06-02 12:29:48.370811+00, 2026-06-02 12:29:48.370811+00, af1f8e80-b05f-404d-99aa-e66e32c77abb, 2026-06-02 12:29:48.370811+00, 2026-05-03, 2026-05-03, 2026-06-02 12:29:48.370811+00, employee_role_assignments_revoke_reason_1, t, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_audit_logs",
+      "error": "null value in column \"employee_id\" of relation \"employee_audit_logs\" violates not-null constraint\nDETAIL:  Failing row contains (23d38dd4-4945-4b6b-be1c-9addadb9df94, Acme Employee Audit Logs 1, 13d630a1-01d9-4d93-b111-da7e55649333, employee_a, 2026-06-02 12:29:48.400817+00, {\"index\": 1, \"table\": \"employee_audit_logs\", \"seeded\": true}, {\"index\": 1, \"table\": \"employee_audit_logs\", \"seeded\": true}, {}, 9753730e-c82d-4bb6-aae8-75f5897435ae, null, employee_audit_logs_user_agent_1, employee_audit_logs_source_system_1, 888d0146-cbdb-4ec3-8a54-c13d05c92af3, t, 2026-06-02 12:29:48.400817+00, 2026-06-02 12:29:48.400817+00, 2026-06-02 12:29:48.400817+00, {\"index\": 1, \"table\": \"employee_audit_logs\", \"seeded\": true}, 1, employee_audit_logs_created_by_system_1, employee_audit_logs_updated_by_system_1, employee_audit_logs_created_source_1, employee_audit_logs_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_audit_logs\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "wf_approval_workflow",
+      "error": "null value in column \"company_id\" of relation \"wf_approval_workflow\" violates not-null constraint\nDETAIL:  Failing row contains (3e11602a-0214-4739-956c-63a84c3c2a95, 2026-06-02 12:29:48.430852+00, 2026-06-02 12:29:48.430852+00, 2026-06-02 12:29:48.430852+00, t, {\"index\": 1, \"table\": \"wf_approval_workflow\", \"seeded\": true}, wf_approval_workflow, Acme Wf Approval Workflow 1, null, null, null).\n"
+    },
+    {
+      "table": "employee_family_members",
+      "error": "null value in column \"employee_id\" of relation \"employee_family_members\" violates not-null constraint\nDETAIL:  Failing row contains (c6f3ac64-b40c-45b2-b256-8c04be9cdb37, Acme Employee Family Members 1, Acme Employee Family Members 1, 2026-05-03, t, t, +91-9810000000, employee1.employee_family_members@acme.com, employee_fam, employee_f, t, employee_family_members_data_c, 1, t, 2026-06-02 12:29:48.490333+00, 2026-06-02 12:29:48.490333+00, 2026-06-02 12:29:48.490333+00, {\"index\": 1, \"table\": \"employee_family_members\", \"seeded\": true}, 1, employee_family_members_created_by_system_1, employee_family_members_updated_by_system_1, employee_family_members_created_source_1, employee_family_members_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_family_members\", \"seeded\": true}, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_work_experience",
+      "error": "null value in column \"employee_id\" of relation \"employee_work_experience\" violates not-null constraint\nDETAIL:  Failing row contains (6065a133-599d-4569-bdac-06e341007387, Acme Employee Work Experience 1, employee_work_experience_designation_1, employee_work_experience_department_1, employee_work_experience_location_1, employee_work_experience_employment_type_1, 2026-05-03, 2026-05-03, t, employee_work_experience_responsibilities_1, employee_work_experience_reason_for_leaving_1, 10.11, t, 2026-06-02 12:29:48.530815+00, employee_work_experience_offer_letter_url_1, employee_work_experience_experience_letter_url_1, t, 2026-06-02 12:29:48.530815+00, 2026-06-02 12:29:48.530815+00, 2026-06-02 12:29:48.530815+00, {\"index\": 1, \"table\": \"employee_work_experience\", \"seeded\": true..., 1, employee_work_experience_created_by_system_1, employee_work_experience_updated_by_system_1, employee_work_experience_created_source_1, employee_work_experience_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_work_experience\", \"seeded\": true..., null).\n"
+    },
+    {
+      "table": "mst_shift_definition",
+      "error": "null value in column \"company_id\" of relation \"mst_shift_definition\" violates not-null constraint\nDETAIL:  Failing row contains (0228c568-ea92-44df-9c7f-be8e11ea8c7b, 2026-06-02 12:29:48.575151+00, 2026-06-02 12:29:48.575151+00, 2026-06-02 12:29:48.575151+00, t, {\"index\": 1, \"table\": \"mst_shift_definition\", \"seeded\": true}, Acme Mst Shift Definition 1, MST_-1000, mst_shift_definition, 09:00:00, 09:00:00, t, 1, 1, 1, 1, 1, 1, 1, 1, null, null, 97cfc50a-c629-4d71-9059-0190c81dbde4, null).\n"
+    },
+    {
+      "table": "att_swipe_sync_batch",
+      "error": "null value in column \"company_id\" of relation \"att_swipe_sync_batch\" violates not-null constraint\nDETAIL:  Failing row contains (3df460db-e66d-4cc7-b9af-34bb787aa43a, 2026-06-02 12:29:48.732789+00, att_swipe_sync_batch, 1, att_swipe_sync_batch, 1, 1, 1, att_swipe_sync_batch_error_message_1, {\"index\": 1, \"table\": \"att_swipe_sync_batch\", \"seeded\": true}, att_swipe_sync_batch_celery_task_id_1, 2026-06-02 12:29:48.732789+00, 2026-06-02 12:29:48.732789+00, 2026-06-02 12:29:48.732789+00, {\"index\": 1, \"table\": \"att_swipe_sync_batch\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "mst_attendance_policy",
+      "error": "numeric field overflow\nDETAIL:  A field with precision 3, scale 2 must round to an absolute value less than 10^1.\n"
+    },
+    {
+      "table": "att_shift_master",
+      "error": "null value in column \"company_id\" of relation \"att_shift_master\" violates not-null constraint\nDETAIL:  Failing row contains (e65d6049-8d96-4040-a022-1c4627131db8, 2026-06-02 12:29:48.831355+00, 2026-06-02 12:29:48.831355+00, 2026-06-02 12:29:48.831355+00, t, {\"index\": 1, \"table\": \"att_shift_master\", \"seeded\": true}, Acme Att Shift Master 1, ATT_-1000, 09:00:00, 09:00:00, 1, 1, 1, 1, t, 1, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_fines",
+      "error": "null value in column \"employee_id\" of relation \"employee_fines\" violates not-null constraint\nDETAIL:  Failing row contains (a59f7670-d826-486d-8e65-5341044a8a24, 2026-05-03, employee_fines_act_or_omission_1, t, 2026-05-03, 10.11, 2026-05-03, Auto-seeded record 1 for employee_fines, employee_fines_statu, 2901fa5f-59ba-42ee-b7aa-60aa94a4dc04, c4089d23-1978-4c34-a2ed-b3edb690b4da, t, 2026-06-02 12:29:48.887207+00, 2026-06-02 12:29:48.887207+00, 2026-06-02 12:29:48.887207+00, {\"index\": 1, \"table\": \"employee_fines\", \"seeded\": true}, 1, employee_fines_created_by_system_1, employee_fines_updated_by_system_1, employee_fines_created_source_1, employee_fines_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_fines\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "hr_attendance_audit_log",
+      "error": "null value in column \"company_id\" of relation \"hr_attendance_audit_log\" violates not-null constraint\nDETAIL:  Failing row contains (3, Acme Hr Attendance Audit Log 1, hr_attendance_audit_log_record_id_1, hr_attenda, {\"index\": 1, \"table\": \"hr_attendance_audit_log\", \"seeded\": true}, {\"index\": 1, \"table\": \"hr_attendance_audit_log\", \"seeded\": true}, hr_attendance_audit_, 2026-06-02 12:29:48.935915+00, null, null).\n"
+    },
+    {
+      "table": "emp_previous_employment",
+      "error": "null value in column \"employee_id\" of relation \"emp_previous_employment\" violates not-null constraint\nDETAIL:  Failing row contains (97b557ce-3b5c-46c0-8c31-3f75f74fa778, Acme Emp Previous Employment 1, emp_previous_employment_organization_type_1, emp_previous_employment_job_position_1, emp_previous_employment_job_title_1, Acme Emp Previous Employment 1, emp_previous_employment_location_1, 2026-05-03, 2026-05-03, 10.11, 1, emp_previous_employment_employment_type_1, emp_previous_employment_reporting_to_1, 10.11, emp, emp_previous_employment_reason_for_leaving_1, emp_previous_employment_reason_category_1, emp_previous_employment_key_responsibilities_1, emp_previous_employment_achievements_1, emp_previous_employment_skills_acquired_1, emp_previous_employment_technologies_used_1, 1, emp_previous_employment_experience_certificate_url_1, Acme Emp Previous Employment 1, emp_previous_employment_experience_letter_data_url_1, Acme Emp Previous Employment 1, +91-9810000000, employee1.emp_previous_employment@acme.com, t, 2026-06-02 12:29:48.980427+00, Auto-seeded record 1 for emp_previous_employment, t, 2026-06-02 12:29:48.980427+00, 2026-06-02 12:29:48.980427+00, 2026-06-02 12:29:48.980427+00, {\"index\": 1, \"table\": \"emp_previous_employment\", \"seeded\": true}, 1, emp_previous_employment_created_by_system_1, emp_previous_employment_updated_by_system_1, emp_previous_employment_created_source_1, emp_previous_employment_updated_source_1, {}, {\"index\": 1, \"table\": \"emp_previous_employment\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "employee_background_verification",
+      "error": "null value in column \"employee_id\" of relation \"employee_background_verification\" violates not-null constraint\nDETAIL:  Failing row contains (5db94a2e-e090-4f9a-8de7-00820c5d6075, Acme Employee Background Verification 1, employee_background_verification_verified_by_1, employee_background_verification_reference_number_1, 2026-05-03, Auto-seeded record 1 for employee_background_verification, t, 2026-06-02 12:29:49.040473+00, 2026-06-02 12:29:49.040473+00, 2026-06-02 12:29:49.040473+00, {\"index\": 1, \"table\": \"employee_background_verification\", \"seede..., 1, employee_background_verification_created_by_system, employee_background_verification_updated_by_system, employee_background_verification_created_source_1, employee_background_verification_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_background_verification\", \"seede..., null, null).\n"
+    },
+    {
+      "table": "system_settings",
+      "error": "duplicate key value violates unique constraint \"system_settings_key_f70d56ee_uniq\"\nDETAIL:  Key (key)=(system_settings_key_1) already exists.\n"
+    },
+    {
+      "table": "att_lock_config",
+      "error": "null value in column \"company_id\" of relation \"att_lock_config\" violates not-null constraint\nDETAIL:  Failing row contains (0c2e8a22-e58d-415a-a54d-d38f467ce9fc, 2026-06-02 12:29:49.124486+00, 2026-06-02 12:29:49.124486+00, 2026-06-02 12:29:49.124486+00, t, {\"index\": 1, \"table\": \"att_lock_config\", \"seeded\": true}, 2026-05-03, 2026-05-03, att_lock_config_category_1, att_lock_config_lock_criteria_1, Acme Att Lock Config 1, 2026-05-03, null, null, null, null).\n"
+    },
+    {
+      "table": "att_job",
+      "error": "null value in column \"company_id\" of relation \"att_job\" violates not-null constraint\nDETAIL:  Failing row contains (5b712824-ec72-4a72-b37d-6f5f2f901a60, 2026-06-02 12:29:49.165579+00, 2026-06-02 12:29:49.165579+00, 2026-06-02 12:29:49.165579+00, t, {\"index\": 1, \"table\": \"att_job\", \"seeded\": true}, att_job_job_type_1, 2026-05-03, att_job_status_1, 1, 2026-06-02 12:29:49.165579+00, 2026-06-02 12:29:49.165579+00, att_job_error_log_1, null, null, null).\n"
+    },
+    {
+      "table": "att_swipe_log_import_job",
+      "error": "null value in column \"company_id\" of relation \"att_swipe_log_import_job\" violates not-null constraint\nDETAIL:  Failing row contains (83872e30-ddad-4ef2-91ef-02d088ab66ed, 1, att_swipe_log_import_job_import_mode_1, t, att_swipe_log_import_job_file_path_1, att_swipe_log_import, 1, 1, 1, 1, {\"index\": 1, \"table\": \"att_swipe_log_import_job\", \"seeded\": true..., 2026-06-02 12:29:49.202778+00, 2026-06-02 12:29:49.202778+00, 2026-06-02 12:29:49.202778+00, null, null).\n"
+    },
+    {
+      "table": "employee_localization",
+      "error": "null value in column \"employee_id\" of relation \"employee_localization\" violates not-null constraint\nDETAIL:  Failing row contains (988104ca-b3e4-4e41-b28c-613e5ff64009, employee_localization_timezone_1, employee_localizatio, emplo, employee_l, employee_l, t, 2026-06-02 12:29:49.270575+00, 2026-06-02 12:29:49.270575+00, 2026-06-02 12:29:49.270575+00, {\"index\": 1, \"table\": \"employee_localization\", \"seeded\": true}, 1, employee_localization_created_by_system_1, employee_localization_updated_by_system_1, employee_localization_created_source_1, employee_localization_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_localization\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "employee_education",
+      "error": "null value in column \"education_level_id\" of relation \"employee_education\" violates not-null constraint\nDETAIL:  Failing row contains (31526dc0-ae87-4457-8a07-ffb68437c6b0, Acme Employee Education 1, Acme Employee Education 1, 1, 1, 2026-05-03, 2026-05-03, employee_education_g, 10.11, employee_education_roll_number_1, employee_education_certificate_number_1, employee_education_degree_certificate_url_1, employee_education_marksheet_url_1, employee_education_leaving_certificate_url_1, t, t, 2026-06-02 12:29:49.340862+00, t, 1, 2026-06-02 12:29:49.340862+00, 2026-06-02 12:29:49.340862+00, 2026-06-02 12:29:49.340862+00, {\"index\": 1, \"table\": \"employee_education\", \"seeded\": true}, 1, employee_education_created_by_system_1, employee_education_updated_by_system_1, employee_education_created_source_1, employee_education_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_education\", \"seeded\": true}, null, null, null, null, null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "hr_session",
+      "error": "null value in column \"ip_address\" of relation \"hr_session\" violates not-null constraint\nDETAIL:  Failing row contains (7abf6d18-ba49-4e0c-9cda-4f1c220fc12a, hr_session_session_token_1, null, hr_session_user_agent_1, hr_session_device_fingerprint_1, 2026-06-02 12:29:49.384838+00, 2026-06-02 12:29:49.384838+00, 2026-06-02 12:29:49.384838+00, t, hr_session_revoked_reason_1, null).\n"
+    },
+    {
+      "table": "employee_assets",
+      "error": "null value in column \"asset_category_id\" of relation \"employee_assets\" violates not-null constraint\nDETAIL:  Failing row contains (782166b7-1a24-4c54-9116-023741ac166d, Acme Employee Assets 1, EMPL-1, employee_assets_serial_no_1, 2026-05-03, 2026-05-03, employee_assets_stat, Auto-seeded record 1 for employee_assets, t, 2026-06-02 12:29:49.417845+00, 2026-06-02 12:29:49.417845+00, 2026-06-02 12:29:49.417845+00, {\"index\": 1, \"table\": \"employee_assets\", \"seeded\": true}, 1, employee_assets_created_by_system_1, employee_assets_updated_by_system_1, employee_assets_created_source_1, employee_assets_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_assets\", \"seeded\": true}, null, null, null).\n"
+    },
+    {
+      "table": "attendance_requests",
+      "error": "null value in column \"employee_id\" of relation \"attendance_requests\" violates not-null constraint\nDETAIL:  Failing row contains (3, attendance_requests_request_ty, 2026-05-03, attendance_requests_shift_time_1, 09:00:00, 09:00:00, attendance_requests_, attendance_requests_reason_1, attendance_requests_supporting_document_1, attendance_requests_manager_st, attendance_requests_final_stat, 2026-06-02 12:29:49.444384+00, 2026-06-02 12:29:49.444384+00, null).\n"
+    },
+    {
+      "table": "att_swipe_log_export_job",
+      "error": "null value in column \"company_id\" of relation \"att_swipe_log_export_job\" violates not-null constraint\nDETAIL:  Failing row contains (4088f950-c78f-47d8-984c-5d3662db4e03, {\"index\": 1, \"table\": \"att_swipe_log_export_job\", \"seeded\": true..., 2026-05-03, 2026-05-03, {\"index\": 1, \"table\": \"att_swipe_log_export_job\", \"seeded\": true..., {\"index\": 1, \"table\": \"att_swipe_log_export_job\", \"seeded\": true..., {\"index\": 1, \"table\": \"att_swipe_log_export_job\", \"seeded\": true..., att_swipe_, t, t, t, t, att_swipe_log_export, 1, 1, 1, att_swipe_log_export_job_file_path_1, att_swipe_log_export_job_file_url_1, att_swipe_log_export_job_error_message_1, {\"index\": 1, \"table\": \"att_swipe_log_export_job\", \"seeded\": true..., att_swipe_log_export_job_celery_task_id_1, 2026-06-02 12:29:49.481384+00, 2026-06-02 12:29:49.481384+00, 2026-06-02 12:29:49.481384+00, {\"index\": 1, \"table\": \"att_swipe_log_export_job\", \"seeded\": true..., null, null).\n"
+    },
+    {
+      "table": "employee_salary",
+      "error": "null value in column \"employee_id\" of relation \"employee_salary\" violates not-null constraint\nDETAIL:  Failing row contains (09d6c59c-4657-4704-b219-62fff6b667a1, emp, employee_salary_pay_, 10.11, 10.11, 10.11, 10.11, 10.11, 10.11, 10.11, 10.11, 10.11, 10.11, 10.11, employee_salary_deduction_label_1, employee_salary_net_salary_label_1, Auto-seeded record 1 for employee_salary, 2026-05-03, 2026-05-03, t, 2026-06-02 12:29:49.525389+00, 2026-06-02 12:29:49.525389+00, 2026-06-02 12:29:49.525389+00, {\"index\": 1, \"table\": \"employee_salary\", \"seeded\": true}, 1, employee_salary_created_by_system_1, employee_salary_updated_by_system_1, employee_salary_created_source_1, employee_salary_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_salary\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "leave_encashment_requests",
+      "error": "null value in column \"employee_id\" of relation \"leave_encashment_requests\" violates not-null constraint\nDETAIL:  Failing row contains (504ccbe2-f5e9-4150-ad31-8d5707597692, 1, 10.11, 10.11, 2026-05-03, leave_encashment_req, 2026-06-02 12:29:49.576208+00, 2026-06-02 12:29:49.576208+00, 2026-06-02 12:29:49.576208+00, 2026-06-02 12:29:49.576208+00, 3ba03690-0ab5-4a25-8853-e7ef7eda4ecb, 0a2f44da-d279-4186-b7d8-bcb9f9c31571, {\"index\": 1, \"table\": \"leave_encashment_requests\", \"seeded\": tru..., {}, 1, null, null, db1231d7-1219-40a3-b2f8-7f84377d2e7d).\n"
+    },
+    {
+      "table": "emp_monthly_attendance_summary",
+      "error": "null value in column \"company_id\" of relation \"emp_monthly_attendance_summary\" violates not-null constraint\nDETAIL:  Failing row contains (a4030911-93d7-42ff-9754-a941f64cb9ba, 2026-06-02 12:29:49.654644+00, 2026-06-02 12:29:49.654644+00, 2026-06-02 12:29:49.654644+00, t, {\"index\": 1, \"table\": \"emp_monthly_attendance_summary\", \"seeded\"..., 2026-05-03, 2026-05-03, 1, 1, 10.11, 10.11, 10.11, 1, 10.11, 10.11, 10.11, 1, 1, 1, 1, 1, 1, 1, t, null, null, null, null).\n"
+    },
+    {
+      "table": "leave_balances",
+      "error": "null value in column \"employee_id\" of relation \"leave_balances\" violates not-null constraint\nDETAIL:  Failing row contains (022535c3-0131-4b9e-8df6-511509de53c2, 1, 2026-05-03, 2026-05-03, 10.11, 10.11, 10.11, 10.11, 10.11, 10.11, 10.11, 2026-05-03, 2026-05-03, 2026-05-03, 1, 2026-06-02 12:29:49.703885+00, 2026-06-02 12:29:49.703885+00, 2026-06-02 12:29:49.703885+00, 4f3dd7e9-4f9e-49f6-9f1d-12d80f29028c, a0a48e00-55ee-418d-8ee2-c95c4e4a4bf7, {\"index\": 1, \"table\": \"leave_balances\", \"seeded\": true}, {}, null, db1231d7-1219-40a3-b2f8-7f84377d2e7d).\n"
+    },
+    {
+      "table": "employee_professional_references",
+      "error": "null value in column \"employee_id\" of relation \"employee_professional_references\" violates not-null constraint\nDETAIL:  Failing row contains (5c567a7c-5ac0-4b76-8e99-0cd9d83a88f7, Acme Employee Professional References 1, employee_professional_references_designation_1, employee_professional_references_organisation_1, +91-9810000000, employee1.employee_professional_references@acme.com, employee_professional_references_relationship_1, 1, t, 2026-06-02 12:29:49.764917+00, employee_professional_references_contact_notes_1, employee_professiona, 1, t, 2026-06-02 12:29:49.764917+00, 2026-06-02 12:29:49.764917+00, 2026-06-02 12:29:49.764917+00, {\"index\": 1, \"table\": \"employee_professional_references\", \"seede..., 1, employee_professional_references_created_by_system, employee_professional_references_updated_by_system, employee_professional_references_created_source_1, employee_professional_references_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_professional_references\", \"seede..., null).\n"
+    },
+    {
+      "table": "escalation_matrix",
+      "error": "duplicate key value violates unique constraint \"escalation_matrix_module_approval_level_c826daea_uniq\"\nDETAIL:  Key (module, approval_level)=(escalation_matrix_module_1, 1) already exists.\n"
+    },
+    {
+      "table": "employee_skill_certifications",
+      "error": "null value in column \"employee_id\" of relation \"employee_skill_certifications\" violates not-null constraint\nDETAIL:  Failing row contains (4711ed9c-de01-4650-ae19-35f8321436b7, Acme Employee Skill Certifications 1, employee_skill_certifications_skill_type_1, employee_skill_certifications_proficiency_level_1, 10.1, 1, t, Acme Employee Skill Certifications 1, employee_skill_certifications_certification_body_1, 2026-05-03, 2026-05-03, employee_skill_certifications_credential_id_1, employee_skill_certifications_credential_url_1, employee_skill_certifications_certificate_url_1, t, 2026-06-02 12:29:49.900789+00, 2026-06-02 12:29:49.900789+00, 2026-06-02 12:29:49.900789+00, {\"index\": 1, \"table\": \"employee_skill_certifications\", \"seeded\":..., 1, employee_skill_certifications_created_by_system_1, employee_skill_certifications_updated_by_system_1, employee_skill_certifications_created_source_1, employee_skill_certifications_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_skill_certifications\", \"seeded\":..., null).\n"
+    },
+    {
+      "table": "wfh_requests",
+      "error": "null value in column \"employee_id\" of relation \"wfh_requests\" violates not-null constraint\nDETAIL:  Failing row contains (dc8915d5-755c-46d3-bf41-7b28e5d59a1e, 2026-05-03, 2026-05-03, 10.11, wfh_requests_work_location_typ, t, t, wfh_requests_reason_1, wfh_requests_status_, 2026-06-02 12:29:49.943361+00, wfh_requests_idempotency_key_1, 2026-06-02 12:29:49.943361+00, 2026-06-02 12:29:49.943361+00, 2026-06-02 12:29:49.943361+00, 7c2fc7b0-c02c-4f6c-9922-7d5c959dbb36, c32b86e2-cd64-43b6-9502-1a008a35ae43, {\"index\": 1, \"table\": \"wfh_requests\", \"seeded\": true}, {}, 1, null, null).\n"
+    },
+    {
+      "table": "login_history",
+      "error": "null value in column \"ip_address\" of relation \"login_history\" violates not-null constraint\nDETAIL:  Failing row contains (524dbe0d-96c6-4634-aaf0-7a6e23f55366, 2026-06-02 12:29:49.977858+00, 2026-06-02 12:29:49.977858+00, 99a52670-3fd3-4ba6-9c47-6db2eacf0412, null, login_history_user_agent_1, login_history_device, login_history_login_, login_history_failure_reason_1, t, {\"index\": 1, \"table\": \"login_history\", \"seeded\": true}, t, 2026-06-02 12:29:49.977858+00, 2026-06-02 12:29:49.977858+00, 2026-06-02 12:29:49.977858+00, {\"index\": 1, \"table\": \"login_history\", \"seeded\": true}, 1, login_history_created_by_system_1, login_history_updated_by_system_1, login_history_created_source_1, login_history_updated_source_1, {}, {\"index\": 1, \"table\": \"login_history\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "employee_org_chart_settings",
+      "error": "null value in column \"company_id\" of relation \"employee_org_chart_settings\" violates not-null constraint\nDETAIL:  Failing row contains (4e0b8131-7f24-4410-afaa-0296d4206b4f, t, 2026-06-02 12:29:50.03884+00, 2026-06-02 12:29:50.03884+00, 2026-06-02 12:29:50.03884+00, {\"index\": 1, \"table\": \"employee_org_chart_settings\", \"seeded\": t..., 1, employee_org_chart_settings_created_by_system_1, employee_org_chart_settings_updated_by_system_1, employee_org_chart_settings_created_source_1, employee_org_chart_settings_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_org_chart_settings\", \"seeded\": t..., null, null).\n"
+    },
+    {
+      "table": "employee_contacts",
+      "error": "null value in column \"employee_id\" of relation \"employee_contacts\" violates not-null constraint\nDETAIL:  Failing row contains (95fa594e-fc7c-4778-891b-5900c4a0515b, employee1.employee_contacts@acme.com, employee1.employee_contacts@acme.com, +91-9810000000, +91-9810000000, +91-9810000000, employee_contacts_extension_nu, Acme Employee Contacts 1, +91-9810000000, employee1.employee_contacts@acme.com, employee_contacts_skype_id_1, employee_contacts_linkedin_url_1, t, employee_contacts_data_classif, 1, t, 2026-06-02 12:29:50.114627+00, 2026-06-02 12:29:50.114627+00, 2026-06-02 12:29:50.114627+00, {\"index\": 1, \"table\": \"employee_contacts\", \"seeded\": true}, 1, employee_contacts_created_by_system_1, employee_contacts_updated_by_system_1, employee_contacts_created_source_1, employee_contacts_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_contacts\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "gate_pass_requests",
+      "error": "null value in column \"employee_id\" of relation \"gate_pass_requests\" violates not-null constraint\nDETAIL:  Failing row contains (b3e74d53-d265-42df-8e59-b1c3a73db81d, 2026-05-03, gate_pass_requests_purpose_1, gate_pass_requests_movement_ty, gate_pass_requests_from_location_1, gate_pass_requests_to_location_1, gate_pass_requests_p, 09:00:00, 09:00:00, 09:00:00, 09:00:00, 1, 1, t, 10.1111111, 10.1111111, 10.1111111, 10.1111111, t, gate_pass_requests_reason_1, gate_pass_requests_status_1, 2026-06-02 12:29:50.154562+00, gate_pass_requests_idempotency_key_1, 2026-06-02 12:29:50.154562+00, 2026-06-02 12:29:50.154562+00, 2026-06-02 12:29:50.154562+00, 42c82db3-2023-48ca-b0a8-fcdd4977d449, ce84be96-4d1c-4edb-8cac-8a0b8ad460a8, {\"index\": 1, \"table\": \"gate_pass_requests\", \"seeded\": true}, {}, 1, null, null, null).\n"
+    },
+    {
+      "table": "att_roster_lock_config",
+      "error": "null value in column \"company_id\" of relation \"att_roster_lock_config\" violates not-null constraint\nDETAIL:  Failing row contains (ab1d3f11-f2af-432b-9ecc-25ae2033fcef, 2026-06-02 12:29:50.180892+00, 2026-06-02 12:29:50.180892+00, 2026-06-02 12:29:50.180892+00, {\"index\": 1, \"table\": \"att_roster_lock_config\", \"seeded\": true}, 1, t, 1, null, null, null).\n"
+    },
+    {
+      "table": "emp_salary_assignment",
+      "error": "null value in column \"employee_id\" of relation \"emp_salary_assignment\" violates not-null constraint\nDETAIL:  Failing row contains (add92a44-1a29-4758-8b26-01f6a5657806, 10.11, EMP, 2026-05-03, 2026-05-03, t, Auto-seeded record 1 for emp_salary_assignment, t, 2026-06-02 12:29:50.230033+00, 2026-06-02 12:29:50.230033+00, 2026-06-02 12:29:50.230033+00, {\"index\": 1, \"table\": \"emp_salary_assignment\", \"seeded\": true}, 1, emp_salary_assignment_created_by_system_1, emp_salary_assignment_updated_by_system_1, emp_salary_assignment_created_source_1, emp_salary_assignment_updated_source_1, {}, {\"index\": 1, \"table\": \"emp_salary_assignment\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "mst_reporting_manager",
+      "error": "null value in column \"employee_id\" of relation \"mst_reporting_manager\" violates not-null constraint\nDETAIL:  Failing row contains (84ef52a3-9883-4f92-ac96-467874610fa7, 4c27d967-1bd0-498f-b2d6-8f0b4f79f15e, t, 1, t, 3e8e704f-1c59-4a09-b5d5-e1047168423c, 65e1c0f5-1cd8-4d33-a436-8f9c29f6e95f, 2026-06-02 12:29:50.275514+00, 2026-06-02 12:29:50.275514+00, 2026-06-02 12:29:50.275514+00, {\"index\": 1, \"table\": \"mst_reporting_manager\", \"seeded\": true}, 1, mst_reporting_manager_created_by_system_1, mst_reporting_manager_updated_by_system_1, mst_reporting_manager_created_source_1, mst_reporting_manager_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_reporting_manager\", \"seeded\": true}, null, null, null).\n"
+    },
+    {
+      "table": "mst_headquarter_location",
+      "error": "null value in column \"city_id\" of relation \"mst_headquarter_location\" violates not-null constraint\nDETAIL:  Failing row contains (4, MST_-1000, mst_headquarter_location_label_1, 100 Innovation Park, Pune, Maharashtra, 100 Innovation Park, Pune, Maharashtra, MST_-1, t, 2026-06-02 12:29:50.35661+00, 2026-06-02 12:29:50.35661+00, 2026-06-02 12:29:50.35661+00, {\"index\": 1, \"table\": \"mst_headquarter_location\", \"seeded\": true..., 1, mst_headquarter_location_created_by_system_1, mst_headquarter_location_updated_by_system_1, mst_headquarter_location_created_source_1, mst_headquarter_location_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_headquarter_location\", \"seeded\": true..., null, null, null).\n"
+    },
+    {
+      "table": "mst_attendance_office_location",
+      "error": "null value in column \"company_id\" of relation \"mst_attendance_office_location\" violates not-null constraint\nDETAIL:  Failing row contains (25b8b7b1-2247-46c6-a6cd-1e16e6943357, 2026-06-02 12:29:50.418938+00, 2026-06-02 12:29:50.418938+00, 2026-06-02 12:29:50.418938+00, t, {\"index\": 1, \"table\": \"mst_attendance_office_location\", \"seeded\"..., Acme Mst Attendance Office Location 1, MST_-1000, 100 Innovation Park, Pune, Maharashtra, 100 Innovation Park, Pune, Maharashtra, mst_attendance_office_location_timezone_1, 10.1111111, 10.1111111, 1, f3ffe9f1-2d48-40c8-b25e-1eaa6488969e, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "mst_office_location",
+      "error": "null value in column \"city_id\" of relation \"mst_office_location\" violates not-null constraint\nDETAIL:  Failing row contains (4, MST_-1000, mst_office_location_label_1, 100 Innovation Park, Pune, Maharashtra, 100 Innovation Park, Pune, Maharashtra, MST_-1, mst_office_location_timezone_1, t, t, 2026-06-02 12:29:50.470541+00, 2026-06-02 12:29:50.470541+00, 2026-06-02 12:29:50.470541+00, {\"index\": 1, \"table\": \"mst_office_location\", \"seeded\": true}, 1, mst_office_location_created_by_system_1, mst_office_location_updated_by_system_1, mst_office_location_created_source_1, mst_office_location_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_office_location\", \"seeded\": true}, null, null, null).\n"
+    },
+    {
+      "table": "employee_addresses",
+      "error": "null value in column \"country_id\" of relation \"employee_addresses\" violates not-null constraint\nDETAIL:  Failing row contains (6f7adeb9-c678-4534-ac6d-4fd87ca9edea, 100 Innovation Park,, 100 Innovation Park, Pune, Maharashtra, 100 Innovation Park, Pune, Maharashtra, employee_addresses_landmark_1, EMPL-1, 2026-05-03, 2026-05-03, t, t, 2026-06-02 12:29:50.507562+00, t, employee_addresses_data_classi, 1, t, 2026-06-02 12:29:50.507562+00, 2026-06-02 12:29:50.507562+00, 2026-06-02 12:29:50.507562+00, {\"index\": 1, \"table\": \"employee_addresses\", \"seeded\": true}, 1, employee_addresses_created_by_system_1, employee_addresses_updated_by_system_1, employee_addresses_created_source_1, employee_addresses_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_addresses\", \"seeded\": true}, null, null, null, null, null).\n"
+    },
+    {
+      "table": "accrual_transaction_log",
+      "error": "null value in column \"employee_id\" of relation \"accrual_transaction_log\" violates not-null constraint\nDETAIL:  Failing row contains (3bf155f7-467b-4df2-974d-8d9d0919fddd, 2026-05-03, 10.11, 10.11, 10.11, accrual_transaction_, 2026-06-02 12:29:50.534561+00, null, null, e5965e31-945d-4e30-b2ca-0fe67baf7cc7, db1231d7-1219-40a3-b2f8-7f84377d2e7d).\n"
+    },
+    {
+      "table": "leave_requests",
+      "error": "null value in column \"employee_id\" of relation \"leave_requests\" violates not-null constraint\nDETAIL:  Failing row contains (54ddc20f-1a55-4767-b5dc-1238ff7dd138, 2026-05-03, 2026-05-03, leave_reques, leave_reques, 10.11, leave_requests_reason_1, leave_requests_attachment_url_1, leave_requests_mode_, t, leave_requests_statu, leave_requests_cancellation_reason_1, leave_requests_appli, 1, 2026-05-03, t, leave_requests_idempotency_key_1, 10.1111111, 10.1111111, null, 2026-06-02 12:29:50.601078+00, 2026-06-02 12:29:50.601078+00, 2026-06-02 12:29:50.601078+00, 2026-06-02 12:29:50.601078+00, 0a997b4b-e6db-493c-9f4a-287669d28e54, 63453b7e-371d-4528-b141-ac70367cd4d8, {\"index\": 1, \"table\": \"leave_requests\", \"seeded\": true}, {}, 1, null, null, null, 7c629ba3-db9a-45f1-91d6-58f89857e582, e5965e31-945d-4e30-b2ca-0fe67baf7cc7, null, db1231d7-1219-40a3-b2f8-7f84377d2e7d, leave_requests_).\n"
+    },
+    {
+      "table": "short_leave_requests",
+      "error": "null value in column \"employee_id\" of relation \"short_leave_requests\" violates not-null constraint\nDETAIL:  Failing row contains (f3182ddb-3421-4c50-963b-74c97afca5ec, 2026-05-03, short_leave_requests_time_slot, 09:00:00, 09:00:00, 10.11, short_leave_requests_reason_1, short_leave_requests, 2026-06-02 12:29:50.677517+00, short_leave_requests_idempotency_key_1, 2026-06-02 12:29:50.677517+00, 2026-06-02 12:29:50.677517+00, 2026-06-02 12:29:50.677517+00, 07a89a41-2386-46de-8a13-ef1bc6267d95, d732adea-5bd7-48a4-a4d5-0f24c85cd5df, {\"index\": 1, \"table\": \"short_leave_requests\", \"seeded\": true}, {}, 1, null, null, 7c629ba3-db9a-45f1-91d6-58f89857e582, e5965e31-945d-4e30-b2ca-0fe67baf7cc7, null).\n"
+    },
+    {
+      "table": "overtime_requests",
+      "error": "null value in column \"employee_id\" of relation \"overtime_requests\" violates not-null constraint\nDETAIL:  Failing row contains (7948f828-01bb-4686-a638-f9f0f2624bc3, 2026-05-03, 10.11, overtime_requests_reason_1, t, overtime_requests_st, 2026-06-02 12:29:50.7327+00, 2026-06-02 12:29:50.7327+00, 2026-06-02 12:29:50.7327+00, 2026-06-02 12:29:50.7327+00, 797eb0a8-222d-48b9-b151-e1168b8144bd, e4d035c1-e423-4875-810b-0087f3a035f8, {\"index\": 1, \"table\": \"overtime_requests\", \"seeded\": true}, {}, 1, null, null, null).\n"
+    },
+    {
+      "table": "wf_approval_workflow_step",
+      "error": "null value in column \"company_id\" of relation \"wf_approval_workflow_step\" violates not-null constraint\nDETAIL:  Failing row contains (eb459a12-461f-4cbe-b648-7ce971525497, 2026-06-02 12:29:50.779176+00, 2026-06-02 12:29:50.779176+00, 2026-06-02 12:29:50.779176+00, t, {\"index\": 1, \"table\": \"wf_approval_workflow_step\", \"seeded\": tru..., 1, wf_approval_workflow_step, t, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_nominees",
+      "error": "null value in column \"employee_id\" of relation \"employee_nominees\" violates not-null constraint\nDETAIL:  Failing row contains (16b31bc8-fa58-4041-8f39-f565d9569308, Acme Employee Nominees 1, Acme Employee Nominees 1, employee1.employee_nominees@acme.com, 2026-05-03, 10.11, 100 Innovation Park, Pune, Maharashtra, +91-9810000000, employee_nominees_aadhaar_card_url_1, employee_nominees_pan_card_url_1, employee_nominees_relationship_proof_url_1, employee_nominees_supporting_documents_url_1, t, Acme Employee Nominees 1, employee_nominees_guardian_relation_1, +91-9810000000, 100 Innovation Park, Pune, Maharashtra, employee_nominees_guardian_identity_proof_url_1, Acme Employee Nominees 1, 1, employee_nominees_guardian_identity_proof_mime_type_1, employee_nominees_identity_proof_url_1, Acme Employee Nominees 1, 1, employee_nominees_identity_proof_mime_type_1, t, 2026-06-02 12:29:50.823369+00, 2026-06-02 12:29:50.823369+00, 2026-06-02 12:29:50.823369+00, {\"index\": 1, \"table\": \"employee_nominees\", \"seeded\": true}, 1, employee_nominees_created_by_system_1, employee_nominees_updated_by_system_1, employee_nominees_created_source_1, employee_nominees_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_nominees\", \"seeded\": true}, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_insurance_policies",
+      "error": "null value in column \"company_id\" of relation \"employee_insurance_policies\" violates not-null constraint\nDETAIL:  Failing row contains (9f601979-353e-438d-8323-2e74383a9afb, employee_insurance_policies_policy_number_1, 10.11, 10.11, 2026-05-03, 2026-05-03, t, 2026-06-02 12:29:50.902218+00, 2026-06-02 12:29:50.902218+00, 2026-06-02 12:29:50.902218+00, {\"index\": 1, \"table\": \"employee_insurance_policies\", \"seeded\": t..., 1, employee_insurance_policies_created_by_system_1, employee_insurance_policies_updated_by_system_1, employee_insurance_policies_created_source_1, employee_insurance_policies_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_insurance_policies\", \"seeded\": t..., null, null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "emp_shift_swap_request",
+      "error": "null value in column \"company_id\" of relation \"emp_shift_swap_request\" violates not-null constraint\nDETAIL:  Failing row contains (4da03bf8-bf1f-43e8-a4df-756bfc626236, 2026-06-02 12:29:50.952724+00, 2026-06-02 12:29:50.952724+00, 2026-06-02 12:29:50.952724+00, t, {\"index\": 1, \"table\": \"emp_shift_swap_request\", \"seeded\": true}, 2026-05-03, emp_shift_swap_reque, emp_shift_swap_request_reason_1, 0eed1aeb-f1a5-442d-9ac1-de2686ce12ee, 2026-06-02 12:29:50.952724+00, emp_shift_swap_request_accepted_note_1, 2026-06-02 12:29:50.952724+00, emp_shift_swap_request_approval_note_1, 2026-06-02 12:29:50.952724+00, emp_shift_swap_request_rejection_note_1, 2026-06-02 12:29:50.952724+00, null, null, null, null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "att_realtime_presence",
+      "error": "null value in column \"company_id\" of relation \"att_realtime_presence\" violates not-null constraint\nDETAIL:  Failing row contains (f9b0ffdf-3560-41bd-8447-cdc0a05a57c0, 2026-06-02 12:29:51.015911+00, 2026-06-02 12:29:51.015911+00, 2026-06-02 12:29:51.015911+00, t, 2026-05-03, Maharashtr, t, 2026-06-02 12:29:51.015911+00, 2026-06-02 12:29:51.015911+00, att_realtime_pr, att_realtime_presenc, 15444d0c-2378-4380-877b-ab2b280e9cbc, null, null, null, null, null).\n"
+    },
+    {
+      "table": "emp_shift_roster",
+      "error": "null value in column \"company_id\" of relation \"emp_shift_roster\" violates not-null constraint\nDETAIL:  Failing row contains (9b1c9e42-8bfe-4e66-ab58-07733e7c89a3, 2026-06-02 12:29:51.064457+00, 2026-06-02 12:29:51.064457+00, 2026-06-02 12:29:51.064457+00, t, {\"index\": 1, \"table\": \"emp_shift_roster\", \"seeded\": true}, 2026-05-03, t, emp_shift_roster_override_reason_1, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "emp_weekend_override",
+      "error": "null value in column \"company_id\" of relation \"emp_weekend_override\" violates not-null constraint\nDETAIL:  Failing row contains (a288a30c-c7f1-48dd-882b-274e4ab08cb0, 2026-06-02 12:29:51.102457+00, 2026-06-02 12:29:51.102457+00, 2026-06-02 12:29:51.102457+00, t, {\"index\": 1, \"table\": \"emp_weekend_override\", \"seeded\": true}, 2026-05-03, emp_weeken, emp_weekend_override_reason_1, null, null, null, null, null).\n"
+    },
+    {
+      "table": "att_device_sync_log",
+      "error": "null value in column \"sync_batch_id\" of relation \"att_device_sync_log\" violates not-null constraint\nDETAIL:  Failing row contains (40794890-8d61-45d4-ac00-c51e9b6d600e, 1, ATT_-1000, Acme Att Device Sync Log 1, null, att_device_sync_log_, 1, 1, 1, 2026-06-02 12:29:51.139465+00, att_device_sync_log_error_message_1, ATT_-1, 2026-06-02 12:29:51.139465+00, 2026-06-02 12:29:51.139465+00, 2026-06-02 12:29:51.139465+00, {\"index\": 1, \"table\": \"att_device_sync_log\", \"seeded\": true}, {\"index\": 1, \"table\": \"att_device_sync_log\", \"seeded\": true}, null).\n"
+    },
+    {
+      "table": "emp_late_login_cycle_tracker",
+      "error": "null value in column \"company_id\" of relation \"emp_late_login_cycle_tracker\" violates not-null constraint\nDETAIL:  Failing row contains (2b2cbf03-7371-4b0e-9153-92bf3d7b4c20, 2026-06-02 12:29:51.194149+00, 2026-06-02 12:29:51.194149+00, 2026-06-02 12:29:51.194149+00, t, {\"index\": 1, \"table\": \"emp_late_login_cycle_tracker\", \"seeded\": ..., 2026-05-03, 1, 1, t, 2026-05-03, null, null, null, null, null).\n"
+    },
+    {
+      "table": "mst_attendance_company_config",
+      "error": "null value in column \"company_id\" of relation \"mst_attendance_company_config\" violates not-null constraint\nDETAIL:  Failing row contains (127a8cf7-4239-449e-8876-684d1c834257, 2026-06-02 12:29:51.243193+00, 2026-06-02 12:29:51.243193+00, 2026-06-02 12:29:51.243193+00, t, {\"index\": 1, \"table\": \"mst_attendance_company_config\", \"seeded\":..., mst_attendance_company_config_timezone_1, 1, 1, t, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "emp_monthly_grace_tracker",
+      "error": "null value in column \"company_id\" of relation \"emp_monthly_grace_tracker\" violates not-null constraint\nDETAIL:  Failing row contains (ea5b8d94-58d3-4f82-a912-0204a6b9a951, 2026-06-02 12:29:51.294167+00, 2026-06-02 12:29:51.294167+00, 2026-06-02 12:29:51.294167+00, t, {\"index\": 1, \"table\": \"emp_monthly_grace_tracker\", \"seeded\": tru..., 2026-05-03, 1, 1, 1, 1, {\"index\": 1, \"table\": \"emp_monthly_grace_tracker\", \"seeded\": tru..., null, null, null, null, null).\n"
+    },
+    {
+      "table": "hr_audit_log",
+      "error": "null value in column \"actor_id\" of relation \"hr_audit_log\" violates not-null constraint\nDETAIL:  Failing row contains (d05bd3c4-85e3-4b03-ab86-7e11e363a4b5, hr_audit_log_event_t, hr_audit_log_module_1, hr_audit_log_entity_type_1, af4a2deb-a099-4f0c-b377-4b332990fca8, {\"index\": 1, \"table\": \"hr_audit_log\", \"seeded\": true}, {\"index\": 1, \"table\": \"hr_audit_log\", \"seeded\": true}, null, 2026-06-02 12:29:51.414942+00, null, null, null).\n"
+    },
+    {
+      "table": "approval_workflows",
+      "error": "null value in column \"request_id\" of relation \"approval_workflows\" violates not-null constraint\nDETAIL:  Failing row contains (3, approval_workflows_s, approval_workflows_status_1, approval_workflows_comment_1, 2026-06-02 12:29:51.458484+00, null, null).\n"
+    },
+    {
+      "table": "emp_salary_component_value",
+      "error": "null value in column \"salary_assignment_id\" of relation \"emp_salary_component_value\" violates not-null constraint\nDETAIL:  Failing row contains (34c220d6-1113-45ad-92f5-83a9e2f43b18, 10.11, 10.11, 1, t, 2026-06-02 12:29:51.498784+00, 2026-06-02 12:29:51.498784+00, 2026-06-02 12:29:51.498784+00, {\"index\": 1, \"table\": \"emp_salary_component_value\", \"seeded\": tr..., 1, emp_salary_component_value_created_by_system_1, emp_salary_component_value_updated_by_system_1, emp_salary_component_value_created_source_1, emp_salary_component_value_updated_source_1, {}, {\"index\": 1, \"table\": \"emp_salary_component_value\", \"seeded\": tr..., null, null).\n"
+    },
+    {
+      "table": "emp_position_history",
+      "error": "null value in column \"employee_id\" of relation \"emp_position_history\" violates not-null constraint\nDETAIL:  Failing row contains (e82aec70-80e2-4041-aa8f-5e26dd1ea2b0, 2026-05-03, 2026-05-03, t, 2026-06-02 12:29:51.548901+00, 2026-06-02 12:29:51.548901+00, 2026-06-02 12:29:51.548901+00, {\"index\": 1, \"table\": \"emp_position_history\", \"seeded\": true}, 1, emp_position_history_created_by_system_1, emp_position_history_updated_by_system_1, emp_position_history_created_source_1, emp_position_history_updated_source_1, {}, {\"index\": 1, \"table\": \"emp_position_history\", \"seeded\": true}, f3ffe9f1-2d48-40c8-b25e-1eaa6488969e, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "mst_attendance_holiday_calendar",
+      "error": "null value in column \"company_id\" of relation \"mst_attendance_holiday_calendar\" violates not-null constraint\nDETAIL:  Failing row contains (c868ae97-fe91-4853-8d3b-88c0786aa247, 2026-06-02 12:29:51.580003+00, 2026-06-02 12:29:51.580003+00, 2026-06-02 12:29:51.580003+00, t, {\"index\": 1, \"table\": \"mst_attendance_holiday_calendar\", \"seeded..., 1, 2026-05-03, Acme Mst Attendance Holiday Calendar 1, t, t, 1, f3ffe9f1-2d48-40c8-b25e-1eaa6488969e, null, null, null, null, null).\n"
+    },
+    {
+      "table": "emp_attendance_config",
+      "error": "null value in column \"company_id\" of relation \"emp_attendance_config\" violates not-null constraint\nDETAIL:  Failing row contains (2c571bed-2f29-4b1b-b7ab-e5eb0259aa10, 2026-06-02 12:29:51.615875+00, 2026-06-02 12:29:51.615875+00, 2026-06-02 12:29:51.615875+00, t, {\"index\": 1, \"table\": \"emp_attendance_config\", \"seeded\": true}, 2026-05-03, 2026-05-03, null, null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "mst_production_cell",
+      "error": "null value in column \"office_location_id\" of relation \"mst_production_cell\" violates not-null constraint\nDETAIL:  Failing row contains (5, MST_-1000, mst_production_cell_label_1, 1, t, 2026-06-02 12:29:51.667863+00, 2026-06-02 12:29:51.667863+00, 2026-06-02 12:29:51.667863+00, {\"index\": 1, \"table\": \"mst_production_cell\", \"seeded\": true}, 1, mst_production_cell_created_by_system_1, mst_production_cell_updated_by_system_1, mst_production_cell_created_source_1, mst_production_cell_updated_source_1, {}, {\"index\": 1, \"table\": \"mst_production_cell\", \"seeded\": true}, null, null).\n"
+    },
+    {
+      "table": "mst_shift_rotation_rule",
+      "error": "null value in column \"company_id\" of relation \"mst_shift_rotation_rule\" violates not-null constraint\nDETAIL:  Failing row contains (de8703db-41ee-4d10-9325-189a7f717333, 2026-06-02 12:29:51.729779+00, 2026-06-02 12:29:51.729779+00, 2026-06-02 12:29:51.729779+00, t, mst_shift_rotation_r, {\"index\": 1, \"table\": \"mst_shift_rotation_rule\", \"seeded\": true}, 2026-05-03, 1, 1, t, t, 1, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "mst_weekly_off",
+      "error": "null value in column \"company_id\" of relation \"mst_weekly_off\" violates not-null constraint\nDETAIL:  Failing row contains (effc36fc-c86c-41e2-902b-7a0c9b1aec66, 2026-06-02 12:29:51.798978+00, 2026-06-02 12:29:51.798978+00, 2026-06-02 12:29:51.798978+00, t, 1, 2026-05-03, 2026-05-03, mst_weekly_off_reason_1, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "mst_attendance_device",
+      "error": "null value in column \"company_id\" of relation \"mst_attendance_device\" violates not-null constraint\nDETAIL:  Failing row contains (b6ca2b93-a943-4c10-9776-d4139f384e18, 2026-06-02 12:29:51.841842+00, 2026-06-02 12:29:51.841842+00, 2026-06-02 12:29:51.841842+00, t, {\"index\": 1, \"table\": \"mst_attendance_device\", \"seeded\": true}, MST_-1000, Acme Mst Attendance Device 1, mst_attendance_device_model_1, mst_attendance_device_serial_number_1, mst_attendance_device_source_type_1, null, 100 Innovation Park, Pune, Maharashtra, mst_attendance_device_device_type_1, t, 2026-06-02 12:29:51.841842+00, mst_attendance_devic, 2026-06-02 12:29:51.841842+00, mst_attendance_devic, 10.11, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_deputation_location",
+      "error": "null value in column \"company_id\" of relation \"employee_deputation_location\" violates not-null constraint\nDETAIL:  Failing row contains (c73927c4-9066-4c5e-8118-ddf1efdb2190, employee_deputation_, 2026-05-03, 2026-05-03, employee_deputation_location_reason_1, 2026-06-02 12:29:51.88225+00, employee_deputation_, t, 2026-06-02 12:29:51.88225+00, 2026-06-02 12:29:51.88225+00, 2026-06-02 12:29:51.88225+00, {\"index\": 1, \"table\": \"employee_deputation_location\", \"seeded\": ..., 1, employee_deputation_location_created_by_system_1, employee_deputation_location_updated_by_system_1, employee_deputation_location_created_source_1, employee_deputation_location_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_deputation_location\", \"seeded\": ..., null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_employment_details",
+      "error": "null value in column \"department_id\" of relation \"employee_employment_details\" violates not-null constraint\nDETAIL:  Failing row contains (31953758-400f-4f80-9c0f-7b142f277e2e, employee_employment_, employee_employment_, employee_employment_, employee_employment_, 1, employee_employment_details_pr, employee_employment_details_cost_center_1, employee_employment_details_profit_center_1, employee_employment_details_function_1, employee_employment_details_wing_1, employee_employment_details_zone_1, employee_employment_details_cadre_1, employee_employment_details_batch_1, employee_employment_details_team_1, employee_employment_details_client_1, employee_employment_details_qauision_1, employee_employment_details_bi, 20e58779-670e-453d-8add-1f9cb4cf9526, t, 2026-06-02 12:29:52.012701+00, 2026-06-02 12:29:52.012701+00, 2026-06-02 12:29:52.012701+00, {\"index\": 1, \"table\": \"employee_employment_details\", \"seeded\": t..., 1, employee_employment_details_created_by_system_1, employee_employment_details_updated_by_system_1, employee_employment_details_created_source_1, employee_employment_details_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_employment_details\", \"seeded\": t..., null, null, null, null, null, null, null, null, null, null, 97cfc50a-c629-4d71-9059-0190c81dbde4, null, null).\n"
+    },
+    {
+      "table": "leave_resubmission_history",
+      "error": "null value in column \"original_request_id\" of relation \"leave_resubmission_history\" violates not-null constraint\nDETAIL:  Failing row contains (edbec458-0650-4338-bdf9-aba1717d3974, {\"index\": 1, \"table\": \"leave_resubmission_history\", \"seeded\": tr..., 2026-06-02 12:29:52.052486+00, null, null, null).\n"
+    },
+    {
+      "table": "comp_off_usage_map",
+      "error": "null value in column \"comp_off_request_id\" of relation \"comp_off_usage_map\" violates not-null constraint\nDETAIL:  Failing row contains (657becc4-ddcb-4dcf-b261-fed31c34f90d, 10.11, 2026-06-02 12:29:52.081444+00, null, null).\n"
+    },
+    {
+      "table": "emp_daily_attendance",
+      "error": "null value in column \"company_id\" of relation \"emp_daily_attendance\" violates not-null constraint\nDETAIL:  Failing row contains (0aa70483-ac49-4846-b12c-b3253ca3ade6, 2026-06-02 12:29:52.12378+00, 2026-06-02 12:29:52.12378+00, 2026-06-02 12:29:52.12378+00, t, {\"index\": 1, \"table\": \"emp_daily_attendance\", \"seeded\": true}, 2026-05-03, emp_daily_attendance, 2026-06-02 12:29:52.12378+00, 2026-06-02 12:29:52.12378+00, 1, 1, 1, 1, 1, 1, 10.11, t, t, t, emp_daily_atten, 1, t, 2026-06-02 12:29:52.124779+00, emp_daily_atten, 4581e6cd-9eb0-4112-a6c0-88a19158d38f, emp_daily_at, t, null, null, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_leave_requests_cc",
+      "error": "null value in column \"cc_employee_id\" of relation \"employee_leave_requests_cc\" violates not-null constraint\nDETAIL:  Failing row contains (cedd6ac8-a1c0-45ed-a724-bcf77aa179e8, 2026-06-02 12:29:52.222455+00, null, null).\n"
+    },
+    {
+      "table": "leave_request_days",
+      "error": "numeric field overflow\nDETAIL:  A field with precision 3, scale 2 must round to an absolute value less than 10^1.\n"
+    },
+    {
+      "table": "leave_cancellation_requests",
+      "error": "null value in column \"employee_id\" of relation \"leave_cancellation_requests\" violates not-null constraint\nDETAIL:  Failing row contains (fa2e4ff1-36dc-4569-b45e-b1ed5f19136c, leave_cancellation_r, 2026-05-03, 2026-05-03, leave_cancellation_requests_cancellation_reason_1, leave_cancellation_requests_st, 2026-06-02 12:29:52.344709+00, 2026-06-02 12:29:52.344709+00, 2026-06-02 12:29:52.344709+00, 2026-06-02 12:29:52.344709+00, f9c134c9-e1df-4a4b-8fc3-53433daefedf, a19495e7-b91e-4c56-8a0f-519ea9f2c9f9, {\"index\": 1, \"table\": \"leave_cancellation_requests\", \"seeded\": t..., {}, 1, null, null, null).\n"
+    },
+    {
+      "table": "leave_status_history",
+      "error": "null value in column \"changed_by_id\" of relation \"leave_status_history\" violates not-null constraint\nDETAIL:  Failing row contains (331306d3-8d6e-4a85-b157-b4936b0444bd, leave_status_history_from_stat, leave_status_history_to_status, Auto-seeded record 1 for leave_status_history, 2026-06-02 12:29:52.3771+00, null, null).\n"
+    },
+    {
+      "table": "leave_approvals",
+      "error": "null value in column \"approver_id\" of relation \"leave_approvals\" violates not-null constraint\nDETAIL:  Failing row contains (b87a5129-e7e7-499a-8425-20032a3091a2, 1, leave_approvals_status_1, Auto-seeded record 1 for leave_approvals, t, leave_approvals_auto_approved_reason_1, 2026-06-02 12:29:52.420119+00, 1, 2026-06-02 12:29:52.420119+00, 2026-06-02 12:29:52.420119+00, 2026-06-02 12:29:52.420119+00, 2026-06-02 12:29:52.420119+00, 2026-06-02 12:29:52.420119+00, 2fb18146-4a30-48be-bafc-8444e1b63a9b, a222e428-cd56-472f-a095-495508afeed4, {\"index\": 1, \"table\": \"leave_approvals\", \"seeded\": true}, {}, 1, null, null, null).\n"
+    },
+    {
+      "table": "leave_comments",
+      "error": "null value in column \"commenter_id\" of relation \"leave_comments\" violates not-null constraint\nDETAIL:  Failing row contains (70d8a2f9-cc8b-4794-9e25-f9551f27c9af, leave_comments_comment_1, t, 2026-06-02 12:29:52.46079+00, null, null).\n"
+    },
+    {
+      "table": "leave_documents",
+      "error": "null value in column \"uploaded_by_id\" of relation \"leave_documents\" violates not-null constraint\nDETAIL:  Failing row contains (05c5d5ae-5edf-4a60-b494-01296a176f56, Acme Leave Documents 1, leave_documents_file_url_1, leave_documents_file_type_1, 1, 2026-06-02 12:29:52.511301+00, null, null).\n"
+    },
+    {
+      "table": "wf_approval_request",
+      "error": "null value in column \"approver_id\" of relation \"wf_approval_request\" violates not-null constraint\nDETAIL:  Failing row contains (27b14002-9f74-451e-92a5-041e0b01541b, 2026-06-02 12:29:52.546833+00, 2026-06-02 12:29:52.546833+00, 2026-06-02 12:29:52.546833+00, t, {\"index\": 1, \"table\": \"wf_approval_request\", \"seeded\": true}, wf_approval_request_, bc9df0f9-01fb-43a7-9ae3-cf32cb2db2e2, wf_approval_request_, 2026-06-02 12:29:52.546833+00, Auto-seeded record 1 for wf_approval_request, null, null, null, null, null).\n"
+    },
+    {
+      "table": "att_punch_log",
+      "error": "null value in column \"company_id\" of relation \"att_punch_log\" violates not-null constraint\nDETAIL:  Failing row contains (2026-06-02 12:29:52.610833+00, 3, 1, att_punch_log_essl_source_table_1, 2026-06-02 12:29:52.610833+00, 2026-06-02 12:29:52.610833+00, att_punch_lo, att_punch_log_p, att_punch_log_source_1, 1, att_punch_log_punch_mode_1, t, 10.1111111, 10.1111111, t, t, t, 1, {\"index\": 1, \"table\": \"att_punch_log\", \"seeded\": true}, att_punch_log_duplic, {\"index\": 1, \"table\": \"att_punch_log\", \"seeded\": true}, {\"index\": 1, \"table\": \"att_punch_log\", \"seeded\": true}, null, null, null, null).\n"
+    },
+    {
+      "table": "employee_access_cards",
+      "error": "null value in column \"employee_id\" of relation \"employee_access_cards\" violates not-null constraint\nDETAIL:  Failing row contains (a84d2b0b-7264-4158-8737-536909ea6702, employee_access_cards_card_number_1, EMPL-1000, employee_access_card, 2026-05-03, 2026-05-03, 2026-06-02 12:29:52.669379+00, employee_access_cards_revoked_reason_1, t, 2026-06-02 12:29:52.669379+00, 2026-06-02 12:29:52.669379+00, 2026-06-02 12:29:52.669379+00, {\"index\": 1, \"table\": \"employee_access_cards\", \"seeded\": true}, 1, employee_access_cards_created_by_system_1, employee_access_cards_updated_by_system_1, employee_access_cards_created_source_1, employee_access_cards_updated_source_1, {}, {\"index\": 1, \"table\": \"employee_access_cards\", \"seeded\": true}, null, null, null, 1, null).\n"
+    },
+    {
+      "table": "emp_overtime_request",
+      "error": "null value in column \"attendance_id\" of relation \"emp_overtime_request\" violates not-null constraint\nDETAIL:  Failing row contains (42e94bce-ccf5-4bc5-bfde-47e6b00cdc55, 2026-06-02 12:29:52.72138+00, 2026-06-02 12:29:52.72138+00, 2026-06-02 12:29:52.72138+00, t, {\"index\": 1, \"table\": \"emp_overtime_request\", \"seeded\": true}, 2026-05-03, 1, 1, emp_overtime_request_reason_1, emp_overtime_request, 2026-06-02 12:29:52.72138+00, bf9782e1-b362-4c79-8c52-c9984f364612, emp_overtime_request, null, null, null, null, null, null).\n"
+    },
+    {
+      "table": "emp_daily_attendance_session",
+      "error": "null value in column \"attendance_id\" of relation \"emp_daily_attendance_session\" violates not-null constraint\nDETAIL:  Failing row contains (e49a0895-2cc8-4762-9467-29a8ff85ed05, 2026-06-02 12:29:52.756909+00, 2026-06-02 12:29:52.756909+00, 2026-06-02 12:29:52.756909+00, t, {\"index\": 1, \"table\": \"emp_daily_attendance_session\", \"seeded\": ..., 1, 2026-06-02 12:29:52.756909+00, 2026-06-02 12:29:52.756909+00, 1, 1, null, null, null, null).\n"
+    },
+    {
+      "table": "emp_regularization_request",
+      "error": "null value in column \"attendance_id\" of relation \"emp_regularization_request\" violates not-null constraint\nDETAIL:  Failing row contains (32b2e61c-e78b-4db5-8ff9-0cc1cb2efe6c, 2026-06-02 12:29:52.803907+00, 2026-06-02 12:29:52.803907+00, 2026-06-02 12:29:52.803907+00, t, {\"index\": 1, \"table\": \"emp_regularization_request\", \"seeded\": tr..., 2026-05-03, emp_regularization_reques, emp_regularization_request_mod, 2026-06-02 12:29:52.803907+00, 2026-06-02 12:29:52.803907+00, emp_regularizat, 1, emp_regularization_request_reason_1, t, emp_regularization_r, e740c247-4fcf-4d4b-997f-6a6c25fd3bff, emp_regularization_r, null, null, null, null, null, 97e464f6-bb2d-4ffe-af0f-7f9011c9491c, null).\n"
+    },
+    {
+      "table": "att_exception",
+      "error": "null value in column \"company_id\" of relation \"att_exception\" violates not-null constraint\nDETAIL:  Failing row contains (158fe059-93e2-4f70-ba3c-f1fec3502d40, 2026-06-02 12:29:52.835923+00, 2026-06-02 12:29:52.835923+00, 2026-06-02 12:29:52.835923+00, t, {\"index\": 1, \"table\": \"att_exception\", \"seeded\": true}, att_except, 2026-06-02 12:29:52.835923+00, t, 2026-06-02 12:29:52.835923+00, att_exception_resolution_note_1, null, null, null, null, null, null, null).\n"
+    }
+  ],
+  "tables_under_target_count": 113,
+  "tables_under_target": [
+    {
+      "table": "mst_batch",
+      "count": 0
+    },
+    {
+      "table": "mst_company",
+      "count": 2
+    },
+    {
+      "table": "mst_language",
+      "count": 0
+    },
+    {
+      "table": "sec_ip_whitelist",
+      "count": 0
+    },
+    {
+      "table": "employee_segments",
+      "count": 0
+    },
+    {
+      "table": "employee_code_sequences",
+      "count": 1
+    },
+    {
+      "table": "company_policy_form_documents",
+      "count": 0
+    },
+    {
+      "table": "sec_role_menu_permission",
+      "count": 0
+    },
+    {
+      "table": "auth_group_permissions",
+      "count": 0
+    },
+    {
+      "table": "users_user_permissions",
+      "count": 0
+    },
+    {
+      "table": "guardian_userobjectpermission",
+      "count": 0
+    },
+    {
+      "table": "guardian_groupobjectpermission",
+      "count": 0
+    },
+    {
+      "table": "mst_department_division",
+      "count": 0
+    },
+    {
+      "table": "mst_team",
+      "count": 0
+    },
+    {
+      "table": "employee_segment_members",
+      "count": 0
+    },
+    {
+      "table": "employee_property_damages",
+      "count": 0
+    },
+    {
+      "table": "employee_change_requests",
+      "count": 0
+    },
+    {
+      "table": "employee_social_profiles",
+      "count": 0
+    },
+    {
+      "table": "att_roster_lock_state",
+      "count": 0
+    },
+    {
+      "table": "weekly_off_shuffle_requests",
+      "count": 0
+    },
+    {
+      "table": "emp_shift_roster_publish_log",
+      "count": 0
+    },
+    {
+      "table": "employee_language_proficiencies",
+      "count": 0
+    },
+    {
+      "table": "employee_bank_accounts",
+      "count": 1
+    },
+    {
+      "table": "employee_statutory_ids",
+      "count": 1
+    },
+    {
+      "table": "employee_passport_visa",
+      "count": 0
+    },
+    {
+      "table": "employee_documents",
+      "count": 1
+    },
+    {
+      "table": "mst_attendance_cycle",
+      "count": 0
+    },
+    {
+      "table": "leave_balance_ledger",
+      "count": 0
+    },
+    {
+      "table": "mst_employee_leave_policies",
+      "count": 0
+    },
+    {
+      "table": "leave_delegations",
+      "count": 0
+    },
+    {
+      "table": "ntf_attendance_notification",
+      "count": 0
+    },
+    {
+      "table": "comp_off_requests",
+      "count": 0
+    },
+    {
+      "table": "employee_medical_emergency",
+      "count": 0
+    },
+    {
+      "table": "out_duty_requests",
+      "count": 0
+    },
+    {
+      "table": "employee_communication_preferences",
+      "count": 1
+    },
+    {
+      "table": "employee_reporting_relationships",
+      "count": 1
+    },
+    {
+      "table": "employee_audit_logs",
+      "count": 1
+    },
+    {
+      "table": "wf_approval_workflow",
+      "count": 0
+    },
+    {
+      "table": "employee_work_experience",
+      "count": 0
+    },
+    {
+      "table": "mst_shift_definition",
+      "count": 0
+    },
+    {
+      "table": "att_swipe_sync_batch",
+      "count": 0
+    },
+    {
+      "table": "mst_attendance_policy",
+      "count": 0
+    },
+    {
+      "table": "att_shift_master",
+      "count": 0
+    },
+    {
+      "table": "employee_fines",
+      "count": 0
+    },
+    {
+      "table": "hr_attendance_audit_log",
+      "count": 0
+    },
+    {
+      "table": "emp_previous_employment",
+      "count": 0
+    },
+    {
+      "table": "employee_background_verification",
+      "count": 0
+    },
+    {
+      "table": "att_lock_config",
+      "count": 0
+    },
+    {
+      "table": "att_job",
+      "count": 0
+    },
+    {
+      "table": "att_swipe_log_import_job",
+      "count": 0
+    },
+    {
+      "table": "employee_localization",
+      "count": 0
+    },
+    {
+      "table": "hr_session",
+      "count": 0
+    },
+    {
+      "table": "employee_assets",
+      "count": 0
+    },
+    {
+      "table": "attendance_requests",
+      "count": 0
+    },
+    {
+      "table": "att_swipe_log_export_job",
+      "count": 0
+    },
+    {
+      "table": "employee_salary",
+      "count": 0
+    },
+    {
+      "table": "leave_encashment_requests",
+      "count": 0
+    },
+    {
+      "table": "emp_monthly_attendance_summary",
+      "count": 0
+    },
+    {
+      "table": "leave_balances",
+      "count": 0
+    },
+    {
+      "table": "employee_professional_references",
+      "count": 0
+    },
+    {
+      "table": "employee_skill_certifications",
+      "count": 0
+    },
+    {
+      "table": "wfh_requests",
+      "count": 0
+    },
+    {
+      "table": "employee_org_chart_settings",
+      "count": 0
+    },
+    {
+      "table": "gate_pass_requests",
+      "count": 0
+    },
+    {
+      "table": "att_roster_lock_config",
+      "count": 0
+    },
+    {
+      "table": "emp_salary_assignment",
+      "count": 0
+    },
+    {
+      "table": "mst_reporting_manager",
+      "count": 0
+    },
+    {
+      "table": "mst_headquarter_location",
+      "count": 1
+    },
+    {
+      "table": "mst_attendance_office_location",
+      "count": 0
+    },
+    {
+      "table": "mst_office_location",
+      "count": 1
+    },
+    {
+      "table": "accrual_transaction_log",
+      "count": 0
+    },
+    {
+      "table": "leave_requests",
+      "count": 0
+    },
+    {
+      "table": "short_leave_requests",
+      "count": 0
+    },
+    {
+      "table": "overtime_requests",
+      "count": 0
+    },
+    {
+      "table": "wf_approval_workflow_step",
+      "count": 0
+    },
+    {
+      "table": "employee_nominees",
+      "count": 0
+    },
+    {
+      "table": "employee_insurance_policies",
+      "count": 1
+    },
+    {
+      "table": "emp_shift_swap_request",
+      "count": 0
+    },
+    {
+      "table": "att_realtime_presence",
+      "count": 0
+    },
+    {
+      "table": "emp_shift_roster",
+      "count": 0
+    },
+    {
+      "table": "emp_weekend_override",
+      "count": 0
+    },
+    {
+      "table": "att_device_sync_log",
+      "count": 0
+    },
+    {
+      "table": "emp_late_login_cycle_tracker",
+      "count": 0
+    },
+    {
+      "table": "mst_attendance_company_config",
+      "count": 0
+    },
+    {
+      "table": "emp_monthly_grace_tracker",
+      "count": 0
+    },
+    {
+      "table": "hr_audit_log",
+      "count": 0
+    },
+    {
+      "table": "approval_workflows",
+      "count": 0
+    },
+    {
+      "table": "emp_salary_component_value",
+      "count": 0
+    },
+    {
+      "table": "emp_position_history",
+      "count": 0
+    },
+    {
+      "table": "mst_attendance_holiday_calendar",
+      "count": 0
+    },
+    {
+      "table": "emp_attendance_config",
+      "count": 0
+    },
+    {
+      "table": "mst_production_cell",
+      "count": 1
+    },
+    {
+      "table": "mst_shift_rotation_rule",
+      "count": 0
+    },
+    {
+      "table": "mst_weekly_off",
+      "count": 0
+    },
+    {
+      "table": "mst_attendance_device",
+      "count": 0
+    },
+    {
+      "table": "employee_deputation_location",
+      "count": 1
+    },
+    {
+      "table": "leave_resubmission_history",
+      "count": 0
+    },
+    {
+      "table": "comp_off_usage_map",
+      "count": 0
+    },
+    {
+      "table": "emp_daily_attendance",
+      "count": 0
+    },
+    {
+      "table": "employee_leave_requests_cc",
+      "count": 0
+    },
+    {
+      "table": "leave_request_days",
+      "count": 0
+    },
+    {
+      "table": "leave_cancellation_requests",
+      "count": 0
+    },
+    {
+      "table": "leave_status_history",
+      "count": 0
+    },
+    {
+      "table": "leave_approvals",
+      "count": 0
+    },
+    {
+      "table": "leave_comments",
+      "count": 0
+    },
+    {
+      "table": "leave_documents",
+      "count": 0
+    },
+    {
+      "table": "wf_approval_request",
+      "count": 0
+    },
+    {
+      "table": "att_punch_log",
+      "count": 0
+    },
+    {
+      "table": "employee_access_cards",
+      "count": 1
+    },
+    {
+      "table": "emp_overtime_request",
+      "count": 0
+    },
+    {
+      "table": "emp_daily_attendance_session",
+      "count": 0
+    },
+    {
+      "table": "emp_regularization_request",
+      "count": 0
+    },
+    {
+      "table": "att_exception",
+      "count": 0
+    }
+  ]
+}

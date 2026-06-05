@@ -1,0 +1,262 @@
+Build a React-based Admin Dashboard for an HRMS application with a rich, Baroque-inspired design. The UI should feel premium, handcrafted, and elegant, not minimal or AI-generated.
+🎯 Layout Structure
+Create a 3-section dashboard layout:
+🔝 1. Top Summary Cards (4 Cards in a Row)
+Each card contains:
+Title
+Main count
+Small subtext
+Icon
+Cards:
+Total Employees
+Present Today
+On Leave Today
+Pending Approvals
+📊 2. Analytics Section (2 Columns)
+Left: Login & Attendance Summary
+Donut chart showing:
+Logged In
+On Leave
+Not Logged In
+Half Day
+Display total count in center
+Show small stat cards beside or below:
+Logged In count
+On Leave count
+Not Logged In count
+Half Day count
+Right: Employees by Department
+Bar chart showing employee count by department
+Example departments:
+HR
+Engineering
+Sales
+Marketing
+Finance
+📅 3. Bottom Section (2 Columns)
+Left: Events & Reminders
+Tabs:
+All
+Tasks & Meetings
+Birthdays
+Holidays
+Event list items:
+Event title
+Location or description
+Time
+Tag (Today / In X days)
+Right: Lifecycle Alerts
+List of alert cards:
+Onboarding Due
+Confirmation Pending
+Probation Ending Soon
+Each alert contains:
+Title
+Short description
+Count badge
+🎨 Design Style (Baroque-Inspired)
+Apply a modern Baroque aesthetic:
+Colors:
+Deep navy / dark blue
+Burgundy / wine
+Gold accents
+Soft ivory / off-white backgrounds
+UI Elements:
+Soft layered shadows
+Subtle decorative borders
+Slightly rich, elegant card styling
+Typography:
+Headings → serif font (classic feel)
+Body → clean sans-serif
+✨ UX Rules
+Smooth but subtle hover effects
+No flashy animations
+Clean spacing and alignment
+Rich but not cluttered
+⚙️ Tech Requirements
+React
+Tailwind CSS (custom theme)
+Recharts or Chart.js for graphs
+Component-based structure
+📦 Expected Output
+Fully functional Admin Dashboard
+Clean layout with charts and cards
+Premium Baroque-inspired UI
+Should feel like a designed product, not a template
+ 
+ 
+  Build a complete Employee Directory module with Add Employee (single + bulk) and Excel Importer system in a React-based HRMS Admin panel. The implementation must follow a full enterprise-level HRMS structure with all fields, filters, importer types, mapping, and validation.
+🎯 Employee Directory
+🔍 Filters
+Category → All
+Employment Status → All, Probation, Confirmed, Contract, Trainee
+Employee Filter → All, Current Employees, Past Employees
+Search:
+Employee Name
+Employee Number
+Joining Date (date range filter)
+Department, Designation, Team (dropdown filters)
+📋 Directory Fields (Grid/List)
+Employee No
+Employee Name
+Join Date
+Status
+Phone Number
+Email
+Extension Number
+➕ Add Employee
+⚡ Quick Add (Single)
+Employee Name
+Employee Number
+Date of Joining
+Location
+Email ID
+📤 Bulk Upload (Excel Importer)
+🔄 Step 1: Import Setup
+Importer Type (FULL ENTERPRISE LIST – GROUPED)
+Include structured categories:
+Address
+Permanent Address
+Contact Address
+Present Address
+Attendance
+Muster
+Exception
+Swipes
+Shift Roster
+Override
+Regularization
+Employee Core
+Add Employee
+Basic Employee Information
+Employee Bank Details
+Employee Contract Details
+Previous Employment
+Family Details
+Employee Role
+Employee PF/ESI Details
+Employee Resignation
+Payroll
+Salary
+Salary Overrides
+Claims
+Overtime
+Arrears
+Salary Statement
+Leave
+Holiday List
+Leave Transactions
+Week Days
+Income Tax / IT Declarations
+Form24Q
+Rent Proof
+House Property
+IT Declaration Plan
+Loans / LIC / PF
+Loan Details
+LIC Importer
+PF Contribution
+Workflow
+Reviewer Types
+Payments
+Cheque/Cash Statement
+Advanced
+Reversal
+Resettlement
+FBP
+Salary Processing Controls
+Payroll Repository
+🔗 Step 2: Excel Mapping
+Mapping Table Columns
+Fields From Excel
+Mapped To
+Excel Value Preview
+👉 Rule:
+“Fields From Excel” and “Mapped To” must use same master field list
+📌 Employee Master Fields (FULL LIST)
+Include all:
+Personal:
+First Name, Last Name, Full Name
+Date of Birth
+Gender
+Marital Status
+Blood Group
+Father Name, Spouse Name
+Marriage Date
+Nick Name
+Work:
+Employee Number
+Employee Number Series
+Department
+Designation
+Grade
+Location
+Manager Employee No
+Joining Date
+Status
+Probation Period
+Confirmation Date
+Contact:
+Email
+Personal Email
+Mobile Number
+Emergency Contact Name & Number
+Compliance:
+PAN Number
+Aadhaar Number
+PF Number
+ESI Number
+UAN / PRAN
+Bank:
+Bank Name
+Account Number
+IFSC Code
+IBAN
+System / Flags:
+Login Username
+IP Address
+Notice Period
+Background Verification Status
+Background Check Remarks
+Eligibility Flags:
+PF Eligible
+ESI Eligible
+EPS Eligible
+LWF Eligible
+International Employee
+Physically Challenged
+✅ Step 3: Validation
+Validate:
+Mandatory fields
+Data formats
+Duplicate employee numbers
+Master data consistency
+📢 Messages
+Invalid format
+Missing required fields
+Duplicate employee
+“No new master found. Proceed to import.”
+🔘 Actions
+Previous
+Next
+Cancel
+🎨 UI/UX
+Clean enterprise UI
+Stepper (Step 1 → Step 2 → Step 3)
+Table-based mapping
+Responsive layout
+No clutter (group dropdowns properly)
+⚙️ Tech
+React
+Tailwind CSS
+Component-based structure
+📦 Final Output
+Employee Directory with filters
+Quick Add form
+Full Excel Importer:
+Setup
+Mapping
+Validation
+Complete HRMS-level field coverage
+ 
+ 

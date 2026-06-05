@@ -1,0 +1,50 @@
+Virtual env creation
+cd .\backend
+py -3.13 -m venv .venv
+
+Activate the venv - 
+.venv\Scripts\Activate
+
+Install requirements
+pip install -r requirements.txt
+
+Makemigration for apps - 
+python manage.py makemigrations
+
+Migrate Schema for public apps - 
+python manage.py migrate_schemas --shared
+
+Setup the public tenant - 
+python manage.py setup_public_tenant
+
+TO create a tenant - 
+python manage.py provision_tenant --company "Acme Pvt Ltd"  --slug acme   --domain acme.localhost   --plan STARTER
+
+Create superuser for a tenant
+python manage.py create_tenant_superuser
+
+Runserver - 
+python manage.py runserver
+
+To seed employee data -
+python manage.py seed_employees --schema acme
+
+Public localhost
+http://localhost:8000/admin/
+
+Tenant Host
+http://acme.localhost:8000/admin/
+
+To Migrate schemas for specific tenants -
+python manage.py migrate_schemas --schema acme 
+
+
+to seed Bank data
+python manage.py import_bank_csv --schema acme
+
+to import Education Institute/University AISHE data
+python manage.py import_education_csv --schema acme
+
+to import Language data
+python manage.py import_language_csv --schema acme
+

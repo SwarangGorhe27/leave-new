@@ -1,0 +1,38 @@
+# ─── Environment ────
+.venv
+.env
+*.env
+.env.*
+!.env.example
+
+# ─── Python ─────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# ─── Node ───────────
+node_modules/
+frontend/dist/
+.vite/
+
+# ─── IDE ────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── OS ─────────────
+.DS_Store
+Thumbs.db
+
+# ─── Docker ─────────
+*.log
+
+# ─── Django ─────────
+staticfiles/
+media/
+db.sqlite3

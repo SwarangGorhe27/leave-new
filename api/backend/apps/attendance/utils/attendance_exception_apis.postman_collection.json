@@ -1,0 +1,123 @@
+{
+  "info": {
+    "name": "Attendance Exception APIs",
+    "_postman_id": "d8dc1a0b-0e6f-4e84-b8a6-2f2cc6486361",
+    "description": "Postman collection for Attendance Module exception and anomaly APIs.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8000" },
+    { "key": "companyId", "value": "00000000-0000-0000-0000-000000000001" },
+    { "key": "exceptionId", "value": "00000000-0000-0000-0000-000000000101" },
+    { "key": "resolverId", "value": "00000000-0000-0000-0000-000000000201" },
+    { "key": "employeeId", "value": "00000000-0000-0000-0000-000000000301" },
+    { "key": "departmentId", "value": "00000000-0000-0000-0000-000000000401" }
+  ],
+  "item": [
+    {
+      "name": "List Exceptions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/attendance/exceptions?company_id={{companyId}}&from_date=2026-05-01&to_date=2026-05-31&severity=CRITICAL&is_resolved=false&employee_id={{employeeId}}&department_id={{departmentId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "attendance", "exceptions"],
+          "query": [
+            { "key": "company_id", "value": "{{companyId}}" },
+            { "key": "from_date", "value": "2026-05-01" },
+            { "key": "to_date", "value": "2026-05-31" },
+            { "key": "severity", "value": "CRITICAL" },
+            { "key": "is_resolved", "value": "false" },
+            { "key": "employee_id", "value": "{{employeeId}}" },
+            { "key": "department_id", "value": "{{departmentId}}" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Exception Detail",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/attendance/exceptions/{{exceptionId}}?company_id={{companyId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "attendance", "exceptions", "{{exceptionId}}"],
+          "query": [
+            { "key": "company_id", "value": "{{companyId}}" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Resolve Exception",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"company_id\": \"{{companyId}}\",\n  \"resolution_note\": \"Verified punch anomaly and marked as resolved.\",\n  \"resolved_by\": \"{{resolverId}}\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/attendance/exceptions/{{exceptionId}}/resolve",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "attendance", "exceptions", "{{exceptionId}}", "resolve"]
+        }
+      }
+    },
+    {
+      "name": "Bulk Resolve Exceptions",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"company_id\": \"{{companyId}}\",\n  \"exception_ids\": [\n    \"{{exceptionId}}\",\n    \"00000000-0000-0000-0000-000000000102\"\n  ],\n  \"resolution_note\": \"Reviewed with HR operations and closed in bulk.\",\n  \"resolved_by\": \"{{resolverId}}\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/attendance/exceptions/bulk-resolve",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "attendance", "exceptions", "bulk-resolve"]
+        }
+      }
+    },
+    {
+      "name": "List Exception Types",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/attendance/exception-types?company_id={{companyId}}&is_active=true",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "attendance", "exception-types"],
+          "query": [
+            { "key": "company_id", "value": "{{companyId}}" },
+            { "key": "is_active", "value": "true" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Exceptions Summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/attendance/exceptions/summary?company_id={{companyId}}&from_date=2026-05-01&to_date=2026-05-31&department_id={{departmentId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "attendance", "exceptions", "summary"],
+          "query": [
+            { "key": "company_id", "value": "{{companyId}}" },
+            { "key": "from_date", "value": "2026-05-01" },
+            { "key": "to_date", "value": "2026-05-31" },
+            { "key": "department_id", "value": "{{departmentId}}" }
+          ]
+        }
+      }
+    }
+  ]

@@ -1,0 +1,86 @@
+{
+  "info": {
+    "name": "Attendance Background Jobs",
+    "_postman_id": "9bb7ab52-9252-4a3f-9b2d-18e733a2db4f",
+    "description": "Postman collection for attendance background job APIs.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Jobs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/attendance/jobs?company_id={{company_id}}&job_type=DAILY_COMPUTE&status=QUEUED&from_date=2026-05-01&to_date=2026-05-31",
+          "host": ["{{base_url}}"],
+          "path": ["api", "v1", "attendance", "jobs"],
+          "query": [
+            { "key": "company_id", "value": "{{company_id}}" },
+            { "key": "job_type", "value": "DAILY_COMPUTE" },
+            { "key": "status", "value": "QUEUED" },
+            { "key": "from_date", "value": "2026-05-01" },
+            { "key": "to_date", "value": "2026-05-31" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Trigger Daily Compute",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"company_id\": \"{{company_id}}\",\n  \"job_date\": \"2026-05-19\",\n  \"triggered_by\": \"{{employee_id}}\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/attendance/jobs/trigger/daily-compute",
+          "host": ["{{base_url}}"],
+          "path": ["api", "v1", "attendance", "jobs", "trigger", "daily-compute"]
+        }
+      }
+    },
+    {
+      "name": "Get Job Detail",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/attendance/jobs/{{job_id}}?company_id={{company_id}}",
+          "host": ["{{base_url}}"],
+          "path": ["api", "v1", "attendance", "jobs", "{{job_id}}"],
+          "query": [
+            { "key": "company_id", "value": "{{company_id}}" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Retry Failed Job",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"company_id\": \"{{company_id}}\",\n  \"triggered_by\": \"{{employee_id}}\",\n  \"retry_reason\": \"Manual retry after infra recovery\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/attendance/jobs/{{job_id}}/retry",
+          "host": ["{{base_url}}"],
+          "path": ["api", "v1", "attendance", "jobs", "{{job_id}}", "retry"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    { "key": "base_url", "value": "http://localhost:8000" },
+    { "key": "company_id", "value": "" },
+    { "key": "employee_id", "value": "" },
+    { "key": "job_id", "value": "" }
+  ]
+}
